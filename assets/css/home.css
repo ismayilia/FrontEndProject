@@ -1,0 +1,77 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.header-top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.header-top .followers {
+  position: relative;
+}
+.header-top .followers span {
+  font-size: 14px;
+}
+.header-top .socials {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  width: 250px;
+  top: 29px;
+  left: 0px;
+  z-index: 1;
+  background-color: white;
+}
+.header-top .socials ul {
+  padding: 0rem;
+}
+.header-top .socials ul a {
+  color: black;
+}
+.header-top .socials ul i {
+  margin: 15px;
+}
+.header-top .socials ul p {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.301);
+  margin-bottom: 0px;
+}
+.header-top .free-ship {
+  font-size: 14px;
+}
+.header-top .free-ship a {
+  color: red;
+}
+.header-top .lang-cur a {
+  color: black;
+}
+.header-top .open-case {
+  margin-left: 25px;
+  position: relative;
+}
+.header-top .open-case li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.header-top .open-case .lang {
+  border: 1px solid rgba(0, 0, 0, 0.2117647059);
+  padding: 10px 60px 0px 10px;
+  position: absolute;
+  right: 15px;
+  background-color: white;
+  transform: scale(0);
+}
+.header-top .open-case .usd-blog {
+  border: 1px solid rgba(0, 0, 0, 0.2117647059);
+  position: absolute;
+  padding: 10px 60px 0px 10px;
+  right: 20px;
+  background-color: white;
+  transform: scale(0);
+}/*# sourceMappingURL=home.css.map */
