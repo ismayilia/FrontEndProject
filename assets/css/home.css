@@ -15,6 +15,7 @@ ul {
 }
 .header-top .followers {
   position: relative;
+  cursor: pointer;
 }
 .header-top .followers span {
   font-size: 14px;
@@ -23,7 +24,7 @@ ul {
   position: absolute;
   border: 1px solid rgba(0, 0, 0, 0.288);
   width: 250px;
-  top: 29px;
+  top: 38px;
   left: 0px;
   z-index: 1;
   background-color: white;
@@ -54,6 +55,8 @@ ul {
 .header-top .open-case {
   margin-left: 25px;
   position: relative;
+  cursor: pointer;
+  z-index: 0;
 }
 .header-top .open-case li {
   font-size: 14px;
@@ -65,7 +68,6 @@ ul {
   position: absolute;
   right: 15px;
   background-color: white;
-  transform: scale(0);
 }
 .header-top .open-case .usd-blog {
   border: 1px solid rgba(0, 0, 0, 0.2117647059);
@@ -73,5 +75,51 @@ ul {
   padding: 10px 60px 0px 10px;
   right: 20px;
   background-color: white;
-  transform: scale(0);
+}
+
+.header-down {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+  padding: 30px 0;
+}
+.header-down .icon-logo {
+  display: flex;
+  align-items: center;
+}
+.header-down .icon-logo i {
+  font-size: 20px;
+}
+.header-down .icon-logo .image-logo {
+  width: 80%;
+  margin-left: 30px;
+}
+.header-down .icon-logo .image-logo img {
+  width: 80%;
+}
+.header-down nav a {
+  margin-right: 25px;
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}
+.header-down .icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-down .icons a {
+  color: black;
+  position: relative;
+}
+.header-down .icons a .posution {
+  position: absolute;
+  font-size: 10px;
+  top: -5px;
+  right: -6px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1px 4px;
+}
+.header-down .icons div {
+  margin-left: 20px;
+  font-size: 20px;
 }/*# sourceMappingURL=home.css.map */
