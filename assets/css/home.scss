@@ -293,15 +293,15 @@ ul {
 
         .search-icon {
             position: relative;
-    
+
             .search-close {
                 position: absolute;
                 top: 4px;
                 left: -8px;
                 margin-right: 5px;
-    
+
             }
-    
+
         }
 
         a {
@@ -326,57 +326,81 @@ ul {
             font-size: 20px;
 
         }
-        
+
 
     }
 
-    
+
 
 }
 
 .search-page {
 
-        margin-top: 20px;
-        height: 510px;
-        background-color: white;
-        
-        
-        .content {
-            display: flex;
-            justify-content: space-between;
+    margin-top: 20px;
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 109px;
 
-            i {
-                font-size: 20px;
-            }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        i {
+            font-size: 20px;
         }
+    }
 
-        p {
-            color: rgba(0, 0, 0, 0.267);
-        }
+    p {
+        color: rgba(0, 0, 0, 0.267);
+    }
 
-        .search-text {
-            position: relative;
-            margin: 20px 0;
+    .search-text {
+        position: relative;
+        margin: 20px 0;
 
-            input {
-                border: none;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-                width: 100%;
-                outline: none;
-
-            }
-
-            i {
-                position: absolute;
-                right: 6px;
-                top: 3px;
-                cursor: pointer;
-
-            }
+        input {
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+            width: 100%;
+            outline: none;
 
         }
 
+        i {
+            position: absolute;
+            right: 6px;
+            top: 3px;
+            cursor: pointer;
+
+        }
 
     }
 
-   
+
+}
+
+#sliders {
+    .posution{
+        position: relative;
+        
+        .content-text{
+            position: absolute;
+            left: 108px;
+            bottom: 100px;
+            width: 50%;
+            a{
+                color: black;
+            }
+            h1{
+                font-size: 70px;
+            }
+            p{
+                margin:25px 0
+            }
+        }
+    }
+}

@@ -248,8 +248,12 @@ ul {
 
 .search-page {
   margin-top: 20px;
-  height: 510px;
+  height: 100vh;
   background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 109px;
 }
 .search-page .content {
   display: flex;
@@ -276,4 +280,23 @@ ul {
   right: 6px;
   top: 3px;
   cursor: pointer;
+}
+
+#sliders .posution {
+  position: relative;
+}
+#sliders .posution .content-text {
+  position: absolute;
+  left: 108px;
+  bottom: 100px;
+  width: 50%;
+}
+#sliders .posution .content-text a {
+  color: black;
+}
+#sliders .posution .content-text h1 {
+  font-size: 70px;
+}
+#sliders .posution .content-text p {
+  margin: 25px 0;
 }/*# sourceMappingURL=home.css.map */

@@ -88,4 +88,7 @@ contentCloseIcon.addEventListener("click", function(){
 
 
 
-})
+});
+
+
+
