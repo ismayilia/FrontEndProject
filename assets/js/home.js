@@ -65,25 +65,32 @@ $(function () {
 let iconSearch =document.querySelector(".icons .search-icon .search")
 let searchPage = document.querySelector(".search-page")
 let iconClosePage = document.querySelector(".icons .search-icon .search-close")
+let bodyClose = document.querySelector("body")
 
 iconSearch.addEventListener("click",function(){
     searchPage.classList.remove("d-none")
     iconSearch.classList.add("d-none")
     iconClosePage.classList.remove("d-none")
+    bodyClose.style.overflowY = "hidden"
 })
 
 iconClosePage.addEventListener("click",function(){
     searchPage.classList.add("d-none")
     iconSearch.classList.remove("d-none")
     iconClosePage.classList.add("d-none")
+    bodyClose.style.overflowY = "auto"
 })
 
 let contentCloseIcon = document.querySelector(".content i")
 
-contentCloseIcon.addEventListener("click", function(){
+
+
+contentCloseIcon.addEventListener("click", function(e){
+    console.log(e);
     searchPage.classList.add("d-none")
     iconClosePage.classList.add("d-none")
     iconSearch.classList.remove("d-none")
+    bodyClose.style.overflowY = "auto"
 })
 
 
