@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/pages/home/home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/pages/account/account.css">
+    <title>Account</title>
 </head>
 
 <body>
+
     <!-- Header -->
 
     <header>
@@ -140,7 +141,7 @@
                     <div class="col-6">
                         <nav>
                             <div class="home open-case">
-                                <a class="links" href="">HOME <i class="fa-solid fa-chevron-down"></i></a>
+                                <a class="links" href="home.html">HOME <i class="fa-solid fa-chevron-down"></i></a>
                                 <div class="home-bar d-none">
                                     <ul>
                                         <li>Home 1</li>
@@ -208,17 +209,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="links" href="home.html">WOMAN</a>
+                            <a class="links" href="">WOMAN</a>
                             <a class="links" href="">MAN</a>
                             <a class="links" href="">OUTERWEAR</a>
                             <a class="links" href="">BLOG</a>
-                            <a class="links" href="contact.html">CONTACT</a>
+                            <a class="links" href="">CONTACT</a>
                         </nav>
                     </div>
                     <div class="col-4">
                         <div class="icons">
                             <div class="icon-user">
-                                <a href="account.html"><i class="fa-regular fa-user"></i></a>
+                                <a href=""><i class="fa-regular fa-user"></i></a>
                             </div>
                             <div class="search-icon">
                                 <i class="fa-solid fa-magnifying-glass search" style="cursor: pointer;"></i>
@@ -264,96 +265,65 @@
         </div>
 
     </div>
- 
-    <!-- Sections -->
-
 
     <main>
-        <section id="sliders">
+        <section id="account">
             <div class="container">
-                <div class="slider-all">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active posution">
-                                <img src="./assets/images/s1.jpg" class="d-block w-100" alt="...">
-                                <div class="content-text">
-                                    <h6>WINTER 2022 COLLECTION</h6>
-                                    <h1>Valentin Paul Essential Collection</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
-                                    <a href="">Shop Collection <i class="fa-solid fa-arrow-right-long"></i></a>
-                                </div>
-                            </div>
-                            <div class="carousel-item posution">
-                                <img src="./assets/images/s2.jpg" class="d-block w-100" alt="...">
-                                <div class="content-text">
-                                    <h6>WINTER 2022 COLLECTION</h6>
-                                    <h1>Valentin Paul Essential Collection</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
-                                    <a href="">Shop Collection <i class="fa-solid fa-arrow-right-long"></i></a>
-                                </div>
-                            </div>
-                            <div class="carousel-item posution">
-                                <img src="./assets/images/s3.jpg" class="d-block w-100" alt="...">
-                                <div class="content-text">
-                                    <h6>WINTER 2022 COLLECTION</h6>
-                                    <h1>Valentin Paul Essential Collection</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi?</p>
-                                    <a href="">Shop Collection <i class="fa-solid fa-arrow-right-long"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                <div class="account-blog">
+                    <div class="login-register d-flex justify-content-center">
+                        <h1>LOGIN</h1>
+                        <h1 class="non-active">REGISTER</h1>
                     </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="featured">
-            <div class="container">
-                <div class="featured-all">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="f-left">
-                                <h2>Featured Products</h2>
-                            </div>
+                    <div class="login">
+                        <div class="username">
+                            <p>Username or email address *</p>
+                            <input class="font" type="email">
                         </div>
-                        <div class="col-7">
-                            <div class="f-right">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                            </div>
+                        <div class="pass">
+                            <p>Password *</p>
+                            <input class="font" type="password"><br>
                         </div>
+
+                        <input  type="checkbox" id="remember" >
+                        <label for="remember" >Remember me</label><br>
+                        <button type="submit">Log in</button><br>
+                        <a href="">Lost your password?</a>
+                    </div>
+                    
+                    <div class="login  active-register">
+                        <div class="username">
+                            <p>Username *</p>
+                            <input class="font" type="email">
+                        </div>
+                        <div class="email" style="margin-bottom: 20px;">
+                            <p>Email address *</p>
+                            <input class="font" type="text"><br>
+                        </div>
+                        <div class="pass">
+                            <p>Password *</p>
+                            <input class="font" type="password"><br>
+                        </div>
+
+                        <p style="margin: 15px 0; color: rgba(0, 0, 0, 0.671); font-size: 12px;">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
+                        <button type="submit">Register</button><br>
+                        
                     </div>
                 </div>
 
+
+
+                
             </div>
         </section>
-
     </main>
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
-    <script src="./assets/js/pages/home/home.js"></script>
+    <script src="./assets/js/pages/account/account.js"></script>
 </body>
 
 </html>

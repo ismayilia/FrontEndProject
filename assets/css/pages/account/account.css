@@ -1,0 +1,343 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+header .header-top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+header .header-top .followers {
+  position: relative;
+  cursor: pointer;
+}
+header .header-top .followers span {
+  font-size: 14px;
+}
+header .header-top .socials {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  width: 250px;
+  top: 38px;
+  left: 0px;
+  z-index: 4;
+  background-color: white;
+}
+header .header-top .socials ul {
+  padding: 0rem;
+}
+header .header-top .socials ul a {
+  color: black;
+}
+header .header-top .socials ul i {
+  margin: 15px;
+}
+header .header-top .socials ul p {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.301);
+  margin-bottom: 0px;
+}
+header .header-top .free-ship {
+  font-size: 14px;
+}
+header .header-top .free-ship a {
+  color: red;
+}
+header .header-top .lang-cur a {
+  color: black;
+}
+header .header-top .open-case {
+  margin-left: 25px;
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+}
+header .header-top .open-case li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+header .header-top .open-case .lang {
+  border: 1px solid rgba(0, 0, 0, 0.2117647059);
+  padding: 10px 60px 0px 10px;
+  position: absolute;
+  right: 15px;
+  background-color: white;
+}
+header .header-top .open-case .usd-blog {
+  border: 1px solid rgba(0, 0, 0, 0.2117647059);
+  position: absolute;
+  padding: 10px 60px 0px 10px;
+  right: 20px;
+  background-color: white;
+}
+header .header-down {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+}
+header .header-down .icon-logo {
+  display: flex;
+  align-items: center;
+}
+header .header-down .icon-logo .fa-bars {
+  cursor: pointer;
+}
+header .header-down .icon-logo .side-bar {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 22%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  z-index: 3;
+  transition: all 1s;
+  overflow-y: scroll;
+}
+header .header-down .icon-logo .side-bar::-webkit-scrollbar {
+  width: 6px;
+}
+header .header-down .icon-logo .side-bar::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+header .header-down .icon-logo .side-bar .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+header .header-down .icon-logo .side-bar .head img {
+  width: 40%;
+}
+header .header-down .icon-logo .side-bar .head i {
+  background-color: rgba(0, 0, 0, 0.089);
+  padding: 5px;
+  cursor: pointer;
+}
+header .header-down .icon-logo .side-bar hr {
+  margin: 2rem 0;
+}
+header .header-down .icon-logo .side-bar p {
+  margin-top: 53px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+header .header-down .icon-logo .side-bar li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+header .header-down .icon-logo .side-bar li i {
+  font-size: 12px;
+}
+header .header-down .icon-logo .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+header .header-down .icon-logo .transit {
+  transform: translate(-400px, 0);
+}
+header .header-down .icon-logo i {
+  font-size: 20px;
+}
+header .header-down .icon-logo .image-logo {
+  width: 80%;
+  margin-left: 30px;
+}
+header .header-down .icon-logo .image-logo img {
+  width: 80%;
+}
+header .header-down nav {
+  display: flex;
+  align-items: center;
+}
+header .header-down nav .links {
+  padding: 30px 0;
+}
+header .header-down nav a {
+  margin-right: 25px;
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}
+header .header-down nav .home {
+  position: relative;
+}
+header .header-down nav .home a {
+  display: inline-block;
+}
+header .header-down nav .home .home-bar {
+  border: 1px solid rgba(0, 0, 0, 0.2588235294);
+  position: absolute;
+  background-color: white;
+  width: 230px;
+  padding: 20px;
+  z-index: 1;
+}
+header .header-down nav .home .home-bar li {
+  margin-bottom: 10px;
+}
+header .header-down nav .shop {
+  position: relative;
+}
+header .header-down nav .shop .shop-bar {
+  border: 1px solid rgba(0, 0, 0, 0.2588235294);
+  position: absolute;
+  background-color: white;
+  width: 1100px !important;
+  padding: 5px 0px 5px 15px;
+  top: 53px;
+  left: -215px;
+  z-index: 1;
+}
+header .header-down nav .shop .shop-bar .list {
+  width: 100%;
+}
+header .header-down nav .shop .shop-bar .list a {
+  display: block;
+  margin: 15px 0;
+  font-size: 12px;
+}
+header .header-down nav .shop .shop-bar .list a:nth-child(1) {
+  font-weight: 700;
+}
+header .header-down .icons {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-down .icons .search-icon {
+  position: relative;
+}
+header .header-down .icons .search-icon .search-close {
+  position: absolute;
+  top: 4px;
+  left: -8px;
+  margin-right: 5px;
+}
+header .header-down .icons a {
+  color: black;
+  position: relative;
+}
+header .header-down .icons a .posution {
+  position: absolute;
+  font-size: 10px;
+  top: -5px;
+  right: -6px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 1px 4px;
+}
+header .header-down .icons div {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.search-page {
+  margin-top: 20px;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 109px;
+}
+.search-page .content {
+  display: flex;
+  justify-content: space-between;
+}
+.search-page .content i {
+  font-size: 20px;
+}
+.search-page p {
+  color: rgba(0, 0, 0, 0.267);
+}
+.search-page .search-text {
+  position: relative;
+  margin: 20px 0;
+}
+.search-page .search-text input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  width: 100%;
+  outline: none;
+}
+.search-page .search-text i {
+  position: absolute;
+  right: 6px;
+  top: 3px;
+  cursor: pointer;
+}
+
+.account-blog {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  width: 40%;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 0;
+}
+.account-blog .active-register {
+  position: absolute;
+  top: 133px;
+  left: 32px;
+  width: 88%;
+}
+.account-blog a {
+  color: #ee403d;
+  font-weight: 500;
+}
+.account-blog button {
+  width: 100%;
+  border: none;
+  background-color: #ee403d;
+  color: white;
+  padding: 13px 10px;
+  margin-bottom: 20px;
+}
+.account-blog .login-register {
+  margin-bottom: 40px;
+}
+.account-blog .login-register .non-active {
+  color: rgba(0, 0, 0, 0.349);
+}
+.account-blog .login-register :nth-child(1) {
+  margin-right: 33px;
+}
+.account-blog .login-register h1 {
+  font-size: 1.065rem;
+  cursor: pointer;
+}
+.account-blog .login {
+  margin-bottom: 30px;
+}
+.account-blog .login .username {
+  margin-bottom: 20px;
+}
+.account-blog .login p {
+  margin-bottom: 6px;
+  color: black;
+  text-align: start;
+}
+.account-blog .login .font {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+}
+.account-blog .login label {
+  margin: 20px 0;
+}/*# sourceMappingURL=account.css.map */
