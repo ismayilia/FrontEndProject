@@ -340,4 +340,80 @@ header .header-down .icons div {
 }
 .account-blog .login label {
   margin: 20px 0;
+}
+
+footer .footer-top {
+  padding: 4rem 0;
+  background-color: black;
+}
+footer .footer-top .email-info h2 {
+  color: white;
+}
+footer .footer-top .email-info h6 {
+  color: rgba(255, 255, 255, 0.39);
+  margin-bottom: 30px;
+}
+footer .footer-top .email-info p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.39);
+}
+footer .footer-top .email-info .email-subs {
+  border: 1px solid white;
+  width: 82%;
+}
+footer .footer-top .email-info .email-subs input {
+  width: 70%;
+  height: 50px;
+  border: none;
+  outline: none;
+}
+footer .footer-top .email-info .email-subs button {
+  padding: 12px 40px;
+  color: white;
+  background-color: black;
+  border: none;
+  text-align: center;
+}
+footer .footer-middle {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+  height: 225px;
+}
+footer .footer-middle .middle-l img {
+  width: 50%;
+}
+footer .footer-middle .middle-l p {
+  font-size: 14px;
+  margin: 15px 0;
+}
+footer .footer-middle .middle-l h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+footer .footer-middle .middle-r {
+  justify-content: space-evenly;
+}
+footer .footer-middle .middle-r a {
+  display: block;
+  margin-bottom: 7px;
+  color: black;
+  font-size: 14px;
+}
+footer .footer-middle .middle-r h6 {
+  margin-bottom: 20px;
+}
+footer .footer-bottom {
+  margin: 3rem 0;
+}
+footer .footer-bottom .bottom-l p {
+  font-size: 13px;
+  margin: 3px 0 0;
+}
+footer .footer-bottom .bottom-r {
+  text-align: end;
+}
+footer .footer-bottom .bottom-r a {
+  color: black;
+  font-size: 13px;
+  margin-left: 13px;
 }/*# sourceMappingURL=account.css.map */

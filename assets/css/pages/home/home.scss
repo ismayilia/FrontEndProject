@@ -436,3 +436,100 @@ header{
         }
     }
 }
+
+//Footer-all
+
+footer {
+    .footer-top {
+        padding: 4rem 0;
+        background-color: black;
+
+        .email-info {
+            h2 {
+                color: white;
+            }
+
+            h6{
+                color: rgba(255, 255, 255, 0.39);
+                margin-bottom: 30px;
+            }
+            p{
+                margin-top: 15px;
+                font-size: 12px;
+                color:rgba(255, 255, 255, 0.39) ;
+            }
+
+            .email-subs{
+                border: 1px solid white;
+                width: 82%;
+                input{
+                    width: 70%;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    padding:12px 40px ;
+                    color: white;
+                    background-color: black;
+                    border: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .footer-middle{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+        height: 225px;
+        .middle-l{
+            img{
+                width: 50%;
+            }
+            p{
+                font-size: 14px;
+                margin: 15px 0;
+            }
+
+            h6{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        .middle-r{
+            justify-content: space-evenly;
+            a{
+                display: block;
+                margin-bottom: 7px;
+                color: black;
+                font-size: 14px;
+            }
+            h6{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .footer-bottom{
+        margin:3rem 0;
+        .bottom-l{
+            p{
+                font-size: 13px;
+                margin: 3px 0 0;
+                
+            }
+        }
+
+        .bottom-r{
+            text-align: end;
+            a{
+                color: black;
+                font-size: 13px;
+                margin-left: 13px;
+            }
+        }
+    }
+
+    
+}
