@@ -74,6 +74,8 @@ $(function () {
         overlay.classList.add("d-none")
     })
 
+
+
 //Search
 
 let iconSearch =document.querySelector(".icons .search-icon .search")
@@ -99,12 +101,12 @@ let contentCloseIcon = document.querySelector(".content i")
 
 
 
-contentCloseIcon.addEventListener("click", function(e){
-    console.log(e);
+contentCloseIcon.addEventListener("click", function(){
+    
     searchPage.classList.add("d-none")
     iconClosePage.classList.add("d-none")
     iconSearch.classList.remove("d-none")
-    bodyClose.style.overflowY = "auto"
+    bodyClose.style.overflowY = "auto";
 })
 
 

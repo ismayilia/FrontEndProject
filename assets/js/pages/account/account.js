@@ -95,8 +95,8 @@ let contentCloseIcon = document.querySelector(".content i")
 
 
 
-contentCloseIcon.addEventListener("click", function(e){
-    console.log(e);
+contentCloseIcon.addEventListener("click", function(){
+    
     searchPage.classList.add("d-none")
     iconClosePage.classList.add("d-none")
     iconSearch.classList.remove("d-none")
@@ -105,23 +105,29 @@ contentCloseIcon.addEventListener("click", function(e){
 
 //Account-blog
 
-let accountLogin = document.querySelector(".account-blog .login-register h1:nth-child(1)")
-let accountRegister = document.querySelector(".account-blog .login-register h1:nth-child(2)")
-  
-accountRegister.addEventListener("click",function(){
-    
-        this.classList.remove("non-active")
-        accountLogin.classList.add("non-active")
-        
-    
-})
+let links = document.querySelectorAll('.login-register h1')
+
+for(let btn of links) {
+    btn.onclick = function() {
+        let active = document.querySelector('.active')
+        active.classList.remove('active')
+        this.classList.add('active')
+
+        let id = this.getAttribute('data-id');
+
+        let contents = document.querySelectorAll('.login')
+        for(let div of contents) {
+            if(div.getAttribute('id') === id) {
+                div.classList.remove('d-none')
+            }
+            else{
+                div.classList.add('d-none')
+            }
+        }
+    }
+}
 
 
-accountLogin.addEventListener("click",function(){
-    this.classList.remove("non-active")
-    accountRegister.classList.add("non-active")
-    
-})
 
 
 

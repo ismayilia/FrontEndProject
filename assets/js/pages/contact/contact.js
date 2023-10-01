@@ -97,8 +97,8 @@ let contentCloseIcon = document.querySelector(".content i")
 
 
 
-contentCloseIcon.addEventListener("click", function(e){
-    console.log(e);
+contentCloseIcon.addEventListener("click", function(){
+    
     searchPage.classList.add("d-none")
     iconClosePage.classList.add("d-none")
     iconSearch.classList.remove("d-none")

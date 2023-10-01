@@ -316,12 +316,7 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   padding: 4rem 2rem;
   position: relative;
   z-index: 0;
-}
-.account-blog .active-register {
-  position: absolute;
-  top: 133px;
-  left: 32px;
-  width: 88%;
+  height: 550px;
 }
 .account-blog a {
   color: #ee403d;
@@ -338,8 +333,8 @@ header .header-down .icons .basket-icon a .basket-box h5 {
 .account-blog .login-register {
   margin-bottom: 40px;
 }
-.account-blog .login-register .non-active {
-  color: rgba(0, 0, 0, 0.349);
+.account-blog .login-register .active {
+  color: #000;
 }
 .account-blog .login-register :nth-child(1) {
   margin-right: 33px;
@@ -347,6 +342,7 @@ header .header-down .icons .basket-icon a .basket-box h5 {
 .account-blog .login-register h1 {
   font-size: 1.065rem;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.349);
 }
 .account-blog .login {
   margin-bottom: 30px;

@@ -275,45 +275,45 @@
             <div class="container">
                 <div class="account-blog">
                     <div class="login-register d-flex justify-content-center">
-                        <h1>LOGIN</h1>
-                        <h1 class="non-active">REGISTER</h1>
+                        <h1 data-id="1" class="active">LOGIN</h1>
+                        <h1 data-id="2">REGISTER</h1>
                     </div>
-                    <div class="login">
-                        <div class="username">
-                            <p>Username or email address *</p>
-                            <input class="font" type="email">
+                        <div id="1" class="login">
+                            <div class="username">
+                                <p>Username or email address *</p>
+                                <input class="font" type="email">
+                            </div>
+                            <div class="pass">
+                                <p>Password *</p>
+                                <input class="font" type="password"><br>
+                            </div>
+    
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label><br>
+                            <button type="submit">Log in</button><br>
+                            <a href="">Lost your password?</a>
                         </div>
-                        <div class="pass">
-                            <p>Password *</p>
-                            <input class="font" type="password"><br>
+    
+                        <div id="2" class="login d-none">
+                            <div class="username">
+                                <p>Username *</p>
+                                <input class="font" type="email">
+                            </div>
+                            <div class="email" style="margin-bottom: 20px;">
+                                <p>Email address *</p>
+                                <input class="font" type="text"><br>
+                            </div>
+                            <div class="pass">
+                                <p>Password *</p>
+                                <input class="font" type="password"><br>
+                            </div>
+    
+                            <p style="margin: 15px 0; color: rgba(0, 0, 0, 0.671); font-size: 12px;">Your personal data will
+                                be used to support your experience throughout this website, to manage access to your
+                                account, and for other purposes described in our privacy policy.</p>
+                            <button type="submit">Register</button><br>
+    
                         </div>
-
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Remember me</label><br>
-                        <button type="submit">Log in</button><br>
-                        <a href="">Lost your password?</a>
-                    </div>
-
-                    <div class="login  active-register">
-                        <div class="username">
-                            <p>Username *</p>
-                            <input class="font" type="email">
-                        </div>
-                        <div class="email" style="margin-bottom: 20px;">
-                            <p>Email address *</p>
-                            <input class="font" type="text"><br>
-                        </div>
-                        <div class="pass">
-                            <p>Password *</p>
-                            <input class="font" type="password"><br>
-                        </div>
-
-                        <p style="margin: 15px 0; color: rgba(0, 0, 0, 0.671); font-size: 12px;">Your personal data will
-                            be used to support your experience throughout this website, to manage access to your
-                            account, and for other purposes described in our privacy policy.</p>
-                        <button type="submit">Register</button><br>
-
-                    </div>
                 </div>
 
 
