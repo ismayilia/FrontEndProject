@@ -291,44 +291,83 @@ header {
         .icons {
             display: flex;
             justify-content: flex-end;
-
+    
             .search-icon {
                 position: relative;
-
+    
                 .search-close {
                     position: absolute;
                     top: 4px;
                     left: -8px;
                     margin-right: 5px;
-
+    
                 }
-
+    
             }
-
+    
+            .heart-icon{
+                a{
+                    padding: 30px 0;
+                }
+            }
+    
             a {
                 color: black;
                 position: relative;
-
+    
                 .posution {
                     position: absolute;
                     font-size: 10px;
-                    top: -5px;
+                    top: 25px;
                     right: -6px;
                     color: white;
                     background-color: red;
                     border-radius: 50%;
                     padding: 1px 4px;
-
+    
                 }
             }
-
+    
             div {
                 margin-left: 20px;
                 font-size: 20px;
-
+    
             }
-
-
+    
+            .basket-icon{
+                a{
+                    position: relative;
+                    
+                    padding: 30px 0;
+    
+                    .basket-box{
+                        position: absolute;
+                        right: 0;
+                        top: 75px;
+                        border: 1px solid rgba(0, 0, 0, 0.205);
+                        background-color: white;
+                        z-index: 3;
+                        min-width: 18.75rem;
+                        max-width: 18.75rem;
+                        height: 175px;
+                        text-align: center;
+                        padding-top: 45px;
+                        i{
+                            font-size: 50px;
+                            color: red;
+                            margin-bottom: 18px;
+                            
+                        }
+                        h5{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+    
+    
+    
+    
         }
 
 

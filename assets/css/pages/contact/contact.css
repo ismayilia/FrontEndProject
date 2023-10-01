@@ -226,6 +226,9 @@ header .header-down .icons .search-icon .search-close {
   left: -8px;
   margin-right: 5px;
 }
+header .header-down .icons .heart-icon a {
+  padding: 30px 0;
+}
 header .header-down .icons a {
   color: black;
   position: relative;
@@ -233,7 +236,7 @@ header .header-down .icons a {
 header .header-down .icons a .posution {
   position: absolute;
   font-size: 10px;
-  top: -5px;
+  top: 25px;
   right: -6px;
   color: white;
   background-color: red;
@@ -243,6 +246,31 @@ header .header-down .icons a .posution {
 header .header-down .icons div {
   margin-left: 20px;
   font-size: 20px;
+}
+header .header-down .icons .basket-icon a {
+  position: relative;
+  padding: 30px 0;
+}
+header .header-down .icons .basket-icon a .basket-box {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  background-color: white;
+  z-index: 3;
+  min-width: 18.75rem;
+  max-width: 18.75rem;
+  height: 175px;
+  text-align: center;
+  padding-top: 45px;
+}
+header .header-down .icons .basket-icon a .basket-box i {
+  font-size: 50px;
+  color: red;
+  margin-bottom: 18px;
+}
+header .header-down .icons .basket-icon a .basket-box h5 {
+  font-size: 14px;
 }
 
 .search-page {

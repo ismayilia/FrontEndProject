@@ -31,7 +31,21 @@ $(function () {
         
     }
 
+    //Header-down Bsket-Icon
+    let iconsBasket= document.querySelector(".basket-icon")
+    let boxBasket= document.querySelector(".basket-icon .basket-box")
 
+    iconsBasket.addEventListener("mouseover", function(){
+        boxBasket.classList.remove("d-none")
+    })
+
+    iconsBasket.addEventListener("mouseout", function(){
+        boxBasket.classList.add("d-none")
+    })
+    
+
+
+    //Side-bar
 
 
     let sideBar = document.querySelector(".icon-logo .transit")
