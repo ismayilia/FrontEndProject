@@ -393,6 +393,129 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   color: rgba(0, 0, 0, 0.336);
 }
 
+#logo-sliders .carusel-logo {
+  padding: 48px 0;
+  cursor: pointer;
+}
+#logo-sliders .carusel-logo img {
+  width: 60%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#logo-sliders .carusel-logo img:hover {
+  opacity: 1;
+}
+
+#sweatshirt .sweat-all {
+  padding: 4rem 0;
+}
+#sweatshirt .sweat-all hr {
+  margin: 4rem 0;
+}
+#sweatshirt .sweat-all .sweat-right-all {
+  padding: 0 0 0 110px;
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-top h6 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-top h2 {
+  font-size: 45px;
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-top p {
+  margin: 35px 0;
+  color: rgba(0, 0, 0, 0.349);
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-top a {
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  background-color: white;
+  color: black;
+  padding: 5px 13px;
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-down p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.452);
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-down h6 {
+  font-size: 14px;
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-down .icon-content {
+  margin-bottom: 20px;
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-down .icon-content i {
+  color: yellow;
+}
+#sweatshirt .sweat-all .sweat-right-all .sweat-right-down .icon-content span {
+  font-size: 13px;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+#banners .banners-all {
+  padding: 4rem 0;
+  position: relative;
+}
+#banners .banners-all .banner-content {
+  width: 45%;
+  position: absolute;
+  top: 130px;
+  left: 56px;
+}
+#banners .banners-all .banner-content h6 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#banners .banners-all .banner-content h2 {
+  font-size: 45px;
+}
+#banners .banners-all .banner-content p {
+  margin: 35px 0;
+  color: rgba(0, 0, 0, 0.349);
+}
+#banners .banners-all .banner-content a {
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  background-color: white;
+  color: black;
+  padding: 5px 13px;
+}
+
+#news .news-all .news-content {
+  width: 75%;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+#news .news-all .news-content p {
+  color: rgba(0, 0, 0, 0.445);
+  font-size: 16px;
+}
+#news .news-all .news-fotos .news-img {
+  margin-bottom: 5rem;
+}
+#news .news-all .news-fotos .news-img img {
+  width: 100%;
+}
+#news .news-all .news-fotos .news-img a {
+  display: block;
+}
+#news .news-all .news-fotos .news-img a:nth-of-type(1) {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.651);
+  margin: 35px 0 5px;
+  font-weight: 500;
+}
+#news .news-all .news-fotos .news-img a:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+}
+#news .news-all .news-fotos .news-img p {
+  color: rgba(0, 0, 0, 0.459);
+}
+
 footer .footer-top {
   padding: 4rem 0;
   background-color: black;

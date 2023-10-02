@@ -110,6 +110,8 @@ contentCloseIcon.addEventListener("click", function(){
 })
 
 
+$('div[data-slick]').slick();
+
 
 });
 
