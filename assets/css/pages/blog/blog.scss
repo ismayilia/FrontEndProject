@@ -529,3 +529,117 @@ footer {
 
     
 }
+
+
+//Blogs-all
+
+#blogs{
+    .blog-all{
+        .blog-img{
+            margin-bottom: 5rem;
+
+            a{
+                display: block;
+                &:nth-of-type(3){
+                    color: rgba(0, 0, 0, 0.315);
+                }
+                &:nth-of-type(1){
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.651);
+                    margin: 35px 0 5px;
+                    font-weight: 500;
+                }
+                &:nth-of-type(2){
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: black;
+                    margin-bottom: 10px;
+                }
+
+                
+            }
+            p{
+                color: rgba(0, 0, 0, 0.459);
+            }
+        }
+
+        //Blog-right
+
+        .blog-right{
+            .input-search{
+                border: 1px solid rgba(0, 0, 0, 0.274);
+                padding: 8px 5px;
+                margin-bottom: 40px;
+                input{
+                    width: 90%;
+                    border: none;
+                    outline: none;
+                }
+                i{
+                    color: rgba(0, 0, 0, 0.274);
+                }
+            }
+
+            .post-all{
+                
+
+                hr{
+                    margin-bottom: 40px;
+                }
+                .posts{
+                    margin-bottom: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                        display: block;
+                        color: black;
+                        font-size: 14px;
+                        font-weight: 500;
+                        &:nth-of-type(1){
+                            font-weight: 200;
+                        }
+                    }
+                    img{
+                        cursor: pointer;
+                    }
+
+                }
+            }
+
+            .categories{
+                
+                hr{
+                    margin-bottom: 32px;
+                }
+                a{
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.733);
+                }
+            }
+
+            .tags{
+                margin-top: 38px;
+                hr{
+                    margin-bottom: 25px;
+                }
+
+                a{
+                    border:1px solid rgba(0, 0, 0, 0.164);
+                    color: rgba(0, 0, 0, 0.74);
+                    font-size: 12px;
+                    padding: 5px 15px;
+                    line-height: 35px;
+                    font-weight: 500;
+                }   
+            }
+        }
+
+
+
+
+
+    }
+}
