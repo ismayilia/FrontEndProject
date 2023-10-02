@@ -462,7 +462,7 @@ header{
     }
 }
 
-//Featured Products
+// Section----Featured Products
 
 
 #featured{
@@ -475,6 +475,74 @@ header{
         }
     }
 }
+
+
+// Section----New Collection
+
+#new-collection{
+    .new-all{
+        margin-bottom: 6rem;
+        
+
+       .new-left{
+
+            .content{
+                padding: 0 0 0 110px;
+                p{
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    color: rgba(0, 0, 0, 0.452);
+                }
+            }
+
+            img{
+                margin-bottom: 35px;
+                padding: 0 15px 15px;
+            }
+            
+       } 
+
+
+       .new-right{
+        padding: 0 64px 64px;
+        .top{
+            h6{
+                font-size: 12px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-size: 45px;
+            }
+            p{
+                margin: 35px 0;
+                color: rgba(0, 0, 0, 0.349)
+            }
+            a{
+                border: 1px solid rgba(0, 0, 0, 0.267);
+                background-color: white;
+                color: black;
+                padding: 5px 13px;
+            }
+            
+        }
+
+        .down{
+            img{
+                margin-top: 8rem;
+            }
+        }
+       }
+    }
+}
+
+
+
+
+
+
+
+
 
 //Footer-all
 

@@ -336,6 +336,46 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   color: rgba(0, 0, 0, 0.329);
 }
 
+#new-collection .new-all {
+  margin-bottom: 6rem;
+}
+#new-collection .new-all .new-left .content {
+  padding: 0 0 0 110px;
+}
+#new-collection .new-all .new-left .content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.452);
+}
+#new-collection .new-all .new-left img {
+  margin-bottom: 35px;
+  padding: 0 15px 15px;
+}
+#new-collection .new-all .new-right {
+  padding: 0 64px 64px;
+}
+#new-collection .new-all .new-right .top h6 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#new-collection .new-all .new-right .top h2 {
+  font-size: 45px;
+}
+#new-collection .new-all .new-right .top p {
+  margin: 35px 0;
+  color: rgba(0, 0, 0, 0.349);
+}
+#new-collection .new-all .new-right .top a {
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  background-color: white;
+  color: black;
+  padding: 5px 13px;
+}
+#new-collection .new-all .new-right .down img {
+  margin-top: 8rem;
+}
+
 footer .footer-top {
   padding: 4rem 0;
   background-color: black;

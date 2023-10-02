@@ -409,6 +409,10 @@ footer .footer-bottom .bottom-r a {
 #blogs .blog-all .blog-img p {
   color: rgba(0, 0, 0, 0.459);
 }
+#blogs .blog-all .blog-right {
+  position: sticky;
+  top: 0;
+}
 #blogs .blog-all .blog-right .input-search {
   border: 1px solid rgba(0, 0, 0, 0.274);
   padding: 8px 5px;

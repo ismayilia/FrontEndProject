@@ -7,6 +7,22 @@ ul {
     padding: 0px;
 }
 
+.register-slider-noActive{
+    transform: translate(506px, -348px);
+}
+
+.register-slider-active{
+    transform: translate(0px, -348px);
+}
+
+.login-slider-active{
+    transform: translate(0px, 0px);
+}
+
+.login-slider-noActive{
+    transform: translate(-490px, 0px);
+}
+
 header {
     //Header-Top
 
@@ -442,6 +458,7 @@ header {
     position: relative;
     z-index: 0;
     height: 550px;
+    overflow: hidden;
 
     
 
@@ -480,6 +497,34 @@ header {
 
     .login {
         margin-bottom: 30px;
+        transition: all 0.4s;
+
+        .username {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 6px;
+            color: black;
+            text-align: start;
+        }
+
+        .font {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            padding: 0 10px;
+            border: 1px solid rgba(0, 0, 0, 0.281)
+        }
+
+        label {
+            margin: 20px 0;
+        }
+    }
+
+    .register{
+        margin-bottom: 30px;
+        transition: all 0.4s;
 
         .username {
             margin-bottom: 20px;

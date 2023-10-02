@@ -115,14 +115,24 @@ for(let btn of links) {
 
         let id = this.getAttribute('data-id');
 
-        let contents = document.querySelectorAll('.login')
-        for(let div of contents) {
-            if(div.getAttribute('id') === id) {
-                div.classList.remove('d-none')
-            }
-            else{
-                div.classList.add('d-none')
-            }
+        
+
+        
+
+        if(id == 1){
+            document.querySelector(".login").classList.add("login-slider-active");
+            document.querySelector(".login").classList.remove("login-slider-noActive");
+            document.querySelector(".register").classList.remove("register-slider-active");
+            document.querySelector(".register").classList.add("register-slider-noActive");
+            document.querySelector(".register").style.visibility = "hidden";
+            document.querySelector(".login").style.visibility = "visible";
+
+        }else{
+            document.querySelector(".login").classList.add("login-slider-noActive");
+            document.querySelector(".register").classList.remove("register-slider-noActive");
+            document.querySelector(".register").classList.add("register-slider-active");
+            document.querySelector(".login").style.visibility = "hidden";
+            document.querySelector(".register").style.visibility = "visible";
         }
     }
 }

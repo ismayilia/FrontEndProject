@@ -566,6 +566,9 @@ footer {
         //Blog-right
 
         .blog-right{
+            position: sticky;
+            top: 0;
+            
             .input-search{
                 border: 1px solid rgba(0, 0, 0, 0.274);
                 padding: 8px 5px;

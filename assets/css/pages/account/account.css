@@ -7,6 +7,22 @@ ul {
   padding: 0px;
 }
 
+.register-slider-noActive {
+  transform: translate(506px, -348px);
+}
+
+.register-slider-active {
+  transform: translate(0px, -348px);
+}
+
+.login-slider-active {
+  transform: translate(0px, 0px);
+}
+
+.login-slider-noActive {
+  transform: translate(-490px, 0px);
+}
+
 header .header-top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.281);
   display: flex;
@@ -317,6 +333,7 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   position: relative;
   z-index: 0;
   height: 550px;
+  overflow: hidden;
 }
 .account-blog a {
   color: #ee403d;
@@ -346,6 +363,7 @@ header .header-down .icons .basket-icon a .basket-box h5 {
 }
 .account-blog .login {
   margin-bottom: 30px;
+  transition: all 0.4s;
 }
 .account-blog .login .username {
   margin-bottom: 20px;
@@ -363,6 +381,28 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   border: 1px solid rgba(0, 0, 0, 0.281);
 }
 .account-blog .login label {
+  margin: 20px 0;
+}
+.account-blog .register {
+  margin-bottom: 30px;
+  transition: all 0.4s;
+}
+.account-blog .register .username {
+  margin-bottom: 20px;
+}
+.account-blog .register p {
+  margin-bottom: 6px;
+  color: black;
+  text-align: start;
+}
+.account-blog .register .font {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+}
+.account-blog .register label {
   margin: 20px 0;
 }
 
