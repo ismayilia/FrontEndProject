@@ -330,8 +330,6 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   width: 40%;
   margin: 2rem auto;
   padding: 4rem 2rem;
-  position: relative;
-  z-index: 0;
   height: 550px;
   overflow: hidden;
 }

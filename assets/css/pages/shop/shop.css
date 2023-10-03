@@ -309,6 +309,13 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   cursor: pointer;
 }
 
+.swinger-container {
+  width: 30%;
+}
+.swinger-container img {
+  width: 100%;
+}
+
 footer .footer-top {
   padding: 4rem 0;
   background-color: black;

@@ -109,4 +109,6 @@ contentCloseIcon.addEventListener("click", function(){
 
 
 
+$(".swinger-container").swinger();
+
 });

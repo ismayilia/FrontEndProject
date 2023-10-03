@@ -481,11 +481,131 @@ header {
     }
 }
 
+// Card-sliders
+
+#card-sliders {
+
+    .card-all {
+
+        .card-info {
+            position: relative;
+
+            .basket {
+                color: red;
+                position: absolute;
+                top: 7px;
+                right: 26px;
+                z-index: 1000;
+                margin-bottom: 10px;
+                font-size: 18px;
+                border-radius: 50%;
+                background-color: white;
+                padding: 7px;
+                display: none;
+                transition: all 0.5s;
+                
+            }
+
+            .card-icon {
+                cursor: pointer;
+                position: absolute;
+                top: 7px;
+                right: 26px;
+                z-index: 1000;
+
+                i {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    border-radius: 50%;
+                    background-color: white;
+                    padding: 7px;
+                }
+
+                a {
+                    color: black;
+
+                }
+
+            }
+
+            .card-sale {
+                position: absolute;
+                top: 7px;
+                left: 25px;
+                z-index: 1000;
+
+                span {
+                    padding: 5px 7px;
+                    background-color: white;
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: rgb(14, 209, 14);
+                }
+            }
+
+            .card-content {
+                margin-top: 10px;
+                margin-left: 18px;
+
+                i {
+                    color: yellow;
+                    font-size: 12px;
+
+                }
+
+                span {
+                    font-weight: 700;
+
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+
+                a {
+                    display: block;
+                    font-size: 15px;
+                    color: black;
+                    margin: 10px 0;
+                    font-weight: 500;
+
+                }
+
+                h6 {
+                    font-weight: 800px;
+                }
+            }
+        }
+
+    }
+}
+
+.slick-dots {
+    bottom: 30px;
+}
+
+
+.slick-next:before {
+    content: "→";
+    color: gray !important;
+    font-size: 25px;
+
+}
+
+.slick-prev:before {
+    content: "←";
+    color: gray !important;
+    font-size: 25px;
+}
 
 // Section----New Collection
 
 #new-collection {
+    hr {
+        margin: 5rem 0;
+    }
+
     .new-all {
+
         margin-bottom: 6rem;
 
 
@@ -599,28 +719,30 @@ header {
 #sweatshirt {
     .sweat-all {
         padding: 4rem 0;
-        hr{
+
+        hr {
             margin: 4rem 0;
         }
-        .sweat-right-all{
-            padding: 0 0  0 110px;
-            
-            .sweat-right-top{
+
+        .sweat-right-all {
+            padding: 0 0 0 110px;
+
+            .sweat-right-top {
                 h6 {
                     font-size: 12px;
                     font-weight: 600;
                     margin-bottom: 10px;
                 }
-        
+
                 h2 {
                     font-size: 45px;
                 }
-        
+
                 p {
                     margin: 35px 0;
                     color: rgba(0, 0, 0, 0.349)
                 }
-        
+
                 a {
                     border: 1px solid rgba(0, 0, 0, 0.267);
                     background-color: white;
@@ -628,24 +750,28 @@ header {
                     padding: 5px 13px;
                 }
             }
-    
+
             .sweat-right-down {
-                
-    
+
+
                 p {
                     margin-bottom: 20px;
                     font-size: 16px;
                     color: rgba(0, 0, 0, 0.452);
                 }
-                h6{
+
+                h6 {
                     font-size: 14px;
                 }
-                .icon-content{
+
+                .icon-content {
                     margin-bottom: 20px;
-                    i{
+
+                    i {
                         color: yellow;
                     }
-                    span{
+
+                    span {
                         font-size: 13px;
                         margin-left: 20px;
                         color: rgba(0, 0, 0, 0.452);
@@ -654,40 +780,150 @@ header {
             }
         }
 
-        
 
-        
+
+
 
 
     }
 }
 
+
+// Card-sliders-down
+
+#card-sliders-down {
+
+    .card-all {
+
+        .card-info {
+            position: relative;
+
+            .basket {
+                color: red;
+                position: absolute;
+                top: 7px;
+                right: 26px;
+                z-index: 1000;
+                margin-bottom: 10px;
+                font-size: 18px;
+                border-radius: 50%;
+                background-color: white;
+                padding: 7px;
+                display: none;
+                transition: all 0.5s;
+            }
+
+            .card-icon {
+                cursor: pointer;
+                position: absolute;
+                top: 7px;
+                right: 26px;
+                z-index: 1000;
+
+                i {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    border-radius: 50%;
+                    background-color: white;
+                    padding: 7px;
+
+                }
+
+                a {
+                    color: black;
+
+                }
+
+            }
+
+            .card-sale {
+                position: absolute;
+                top: 7px;
+                left: 25px;
+                z-index: 1000;
+
+                span {
+                    padding: 5px 7px;
+                    background-color: white;
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: rgb(14, 209, 14);
+                }
+            }
+
+            .card-content {
+                margin-top: 10px;
+                margin-left: 18px;
+                position: relative;
+                bottom: 78px;
+                z-index: 1000;
+                background-color: white;
+                width: 80%;
+                left: 26px;
+                padding: 10px 10px;
+
+                i {
+                    color: yellow;
+                    font-size: 12px;
+
+                }
+
+                span {
+                    font-weight: 700;
+
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+
+                a {
+                    display: block;
+                    font-size: 15px;
+                    color: black;
+                    margin: 10px 0;
+                    font-weight: 500;
+
+                }
+
+                h6 {
+                    font-weight: 800px;
+                }
+            }
+        }
+
+    }
+}
+
+
+
 //Banners-all
 
-#banners{
-    .banners-all{
+#banners {
+    .banners-all {
         padding: 4rem 0;
         position: relative;
-        .banner-content{
+
+        .banner-content {
             width: 45%;
             position: absolute;
             top: 130px;
             left: 56px;
+
             h6 {
                 font-size: 12px;
                 font-weight: 600;
                 margin-bottom: 10px;
             }
-    
+
             h2 {
                 font-size: 45px;
             }
-    
+
             p {
                 margin: 35px 0;
                 color: rgba(0, 0, 0, 0.349)
             }
-    
+
             a {
                 border: 1px solid rgba(0, 0, 0, 0.267);
                 background-color: white;
@@ -700,44 +936,49 @@ header {
 
 //News-all
 
-#news{
-    .news-all{
+#news {
+    .news-all {
 
-        .news-content{
+        .news-content {
             width: 75%;
             margin: 0 auto 4rem;
             text-align: center;
-            p{
+
+            p {
                 color: rgba(0, 0, 0, 0.445);
                 font-size: 16px;
             }
         }
-        .news-fotos{
-            .news-img{
+
+        .news-fotos {
+            .news-img {
                 margin-bottom: 5rem;
-                img{
+
+                img {
                     width: 100%;
                 }
-    
-                a{
+
+                a {
                     display: block;
-                    
-                    &:nth-of-type(1){
+
+                    &:nth-of-type(1) {
                         font-size: 13px;
                         color: rgba(0, 0, 0, 0.651);
                         margin: 35px 0 5px;
                         font-weight: 500;
                     }
-                    &:nth-of-type(2){
+
+                    &:nth-of-type(2) {
                         font-weight: 600;
                         font-size: 22px;
                         color: black;
                         margin-bottom: 10px;
                     }
-    
-                    
+
+
                 }
-                p{
+
+                p {
                     color: rgba(0, 0, 0, 0.459);
                 }
             }
