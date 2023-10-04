@@ -489,9 +489,11 @@ header {
 
         .card-info {
             position: relative;
+            overflow: hidden;
 
+            
             .basket {
-                color: red;
+
                 position: absolute;
                 top: 7px;
                 right: 26px;
@@ -503,15 +505,26 @@ header {
                 padding: 7px;
                 display: none;
                 transition: all 0.5s;
-                
-            }
 
+                &:hover {
+                    background-color: red;
+                    color: white;
+                }
+
+            }
+            
             .card-icon {
                 cursor: pointer;
                 position: absolute;
                 top: 7px;
                 right: 26px;
-                z-index: 1000;
+                z-index: 1000;                
+                transform: translate(55px,0);
+                transition: all 0.8s;
+
+                
+
+                
 
                 i {
                     display: block;
@@ -520,6 +533,15 @@ header {
                     border-radius: 50%;
                     background-color: white;
                     padding: 7px;
+                    transition: all 0.5s;
+                    
+
+                    &:hover {
+                        background-color: red;
+                        color: white;
+
+                        
+                    }
                 }
 
                 a {
@@ -527,6 +549,9 @@ header {
 
                 }
 
+            }
+            .transforms{
+                transform: translate(0px,0px );
             }
 
             .card-sale {
@@ -579,9 +604,7 @@ header {
     }
 }
 
-.slick-dots {
-    bottom: 30px;
-}
+
 
 
 .slick-next:before {
@@ -792,14 +815,16 @@ header {
 // Card-sliders-down
 
 #card-sliders-down {
-
+    .slick-dots {
+        bottom: 30px;
+    }
     .card-all {
 
         .card-info {
             position: relative;
 
             .basket {
-                color: red;
+
                 position: absolute;
                 top: 7px;
                 right: 26px;
@@ -811,7 +836,15 @@ header {
                 padding: 7px;
                 display: none;
                 transition: all 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: red;
+                    color: white;
+                }
             }
+
+
 
             .card-icon {
                 cursor: pointer;
@@ -827,6 +860,12 @@ header {
                     border-radius: 50%;
                     background-color: white;
                     padding: 7px;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: red;
+                        color: white;
+                    }
 
                 }
 
