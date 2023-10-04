@@ -309,11 +309,233 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   cursor: pointer;
 }
 
-.swinger-container {
-  width: 30%;
+#shops-main .shops-all .shops-right .sorts {
+  margin: 2rem 0;
 }
-.swinger-container img {
+#shops-main .shops-all .shops-right .sorts .left i {
+  margin-right: 25px;
+}
+#shops-main .shops-all .shops-right .sorts .left i:nth-of-type(2) {
+  color: rgba(0, 0, 0, 0.356);
+}
+#shops-main .shops-all .shops-right .sorts .left span {
+  font-size: 12px;
+  font-weight: 500;
+}
+#shops-main .shops-all .shops-right .sorts .right {
+  font-size: 12px;
+}
+#shops-main .shops-all .shops-right .sorts .right i {
+  margin-left: 10px;
+}
+#shops-main .shops-all .shops-right .sorts .right div {
+  margin-left: 30px;
+}
+#shops-main .shops-all .shops-right .numbers {
+  text-align: center;
+}
+#shops-main .shops-all .shops-right .numbers span {
+  border: 1px solid;
+  background-color: white;
+  color: black;
+  padding: 5px 13px;
+}
+#shops-main .shops-all .shops-right .numbers i {
+  margin-left: 30px;
+}
+#shops-main .shops-all .shops-right .banners-all {
+  padding: 4rem 0 0;
+  position: relative;
+}
+#shops-main .shops-all .shops-right .banners-all img {
   width: 100%;
+}
+#shops-main .shops-all .shops-right .banners-all .banner-content {
+  width: 40%;
+  position: absolute;
+  top: 130px;
+  left: 56px;
+}
+#shops-main .shops-all .shops-right .banners-all .banner-content h2 {
+  font-size: 2.375rem;
+}
+#shops-main .shops-all .shops-right .banners-all .banner-content p {
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.349);
+  font-size: 1rem;
+}
+#shops-main .shops-all .shops-right .product-all .card-info {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .basket {
+  position: absolute;
+  top: 7px;
+  right: 26px;
+  z-index: 1000;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 7px;
+  display: none;
+  transition: all 0.5s;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .basket:hover {
+  background-color: red;
+  color: white;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  z-index: 1000;
+  transform: translate(58px, 0);
+  transition: all 0.8s;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-icon i {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 7px;
+  transition: all 0.5s;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-icon i:hover {
+  background-color: red;
+  color: white;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-icon a {
+  color: black;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .transforms {
+  transform: translate(0px, 0px);
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-sale {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  z-index: 1000;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-sale span {
+  padding: 3px 12px;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(14, 209, 14);
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-content {
+  margin-top: 10px;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-content i {
+  color: yellow;
+  font-size: 12px;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-content span {
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 10px;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-content a {
+  display: block;
+  font-size: 15px;
+  color: black;
+  margin: 10px 0;
+  font-weight: 500;
+}
+#shops-main .shops-all .shops-right .product-all .card-info .card-content h6 {
+  font-weight: 800px;
+}
+
+#shop-down .down .products-down {
+  margin: 2rem 0 6rem;
+}
+#shop-down .down .products-down .card-info {
+  position: relative;
+  overflow: hidden;
+}
+#shop-down .down .products-down .card-info .basket {
+  position: absolute;
+  top: 7px;
+  right: 26px;
+  z-index: 1000;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 7px;
+  display: none;
+  transition: all 0.5s;
+}
+#shop-down .down .products-down .card-info .basket:hover {
+  background-color: red;
+  color: white;
+}
+#shop-down .down .products-down .card-info .card-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  z-index: 1000;
+  transform: translate(58px, 0);
+  transition: all 0.8s;
+}
+#shop-down .down .products-down .card-info .card-icon i {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 7px;
+  transition: all 0.5s;
+}
+#shop-down .down .products-down .card-info .card-icon i:hover {
+  background-color: red;
+  color: white;
+}
+#shop-down .down .products-down .card-info .card-icon a {
+  color: black;
+}
+#shop-down .down .products-down .card-info .transforms {
+  transform: translate(0px, 0px);
+}
+#shop-down .down .products-down .card-info .card-sale {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  z-index: 1000;
+}
+#shop-down .down .products-down .card-info .card-sale span {
+  padding: 3px 12px;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(14, 209, 14);
+}
+#shop-down .down .products-down .card-info .card-content {
+  margin-top: 10px;
+}
+#shop-down .down .products-down .card-info .card-content i {
+  color: yellow;
+  font-size: 12px;
+}
+#shop-down .down .products-down .card-info .card-content span {
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 10px;
+}
+#shop-down .down .products-down .card-info .card-content a {
+  display: block;
+  font-size: 15px;
+  color: black;
+  margin: 10px 0;
+  font-weight: 500;
+}
+#shop-down .down .products-down .card-info .card-content h6 {
+  font-weight: 800px;
 }
 
 footer .footer-top {

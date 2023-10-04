@@ -111,4 +111,36 @@ contentCloseIcon.addEventListener("click", function(){
 
 $(".swinger-container").swinger();
 
+
+
+let wishlistIcons = document.querySelectorAll(".card-icon .fa-heart");
+  
+wishlistIcons.forEach(wishlistIcon => {
+  wishlistIcon.addEventListener("click", function(){
+    this.parentNode.nextElementSibling.style.display= "block";
+
+    this.parentNode.nextElementSibling.addEventListener("click",function(){
+      this.style.display="none"
+    })
+  })
+});
+
+//Wishlist-Icon-Change
+
+let cards = document.querySelectorAll(".card-info");
+
+cards.forEach(card => {
+  card.addEventListener("mouseover", function(e){
+    this.children[1].classList.add("transforms");
+
+    
+  })
+
+  card.addEventListener("mouseout", function(){
+    this.children[1].classList.remove("transforms");
+
+    
+  })
+}); 
+
 });

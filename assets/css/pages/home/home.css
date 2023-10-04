@@ -560,6 +560,7 @@ header .header-down .icons .basket-icon a .basket-box h5 {
 }
 #card-sliders-down .card-all .card-info {
   position: relative;
+  overflow: hidden;
 }
 #card-sliders-down .card-all .card-info .basket {
   position: absolute;
@@ -585,6 +586,8 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   top: 7px;
   right: 26px;
   z-index: 1000;
+  transform: translate(55px, 0);
+  transition: all 0.8s;
 }
 #card-sliders-down .card-all .card-info .card-icon i {
   display: block;
@@ -601,6 +604,9 @@ header .header-down .icons .basket-icon a .basket-box h5 {
 }
 #card-sliders-down .card-all .card-info .card-icon a {
   color: black;
+}
+#card-sliders-down .card-all .card-info .transforms {
+  transform: translate(0px, 0px);
 }
 #card-sliders-down .card-all .card-info .card-sale {
   position: absolute;

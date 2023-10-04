@@ -209,7 +209,7 @@ $(function () {
 
   
   let cards = document.querySelectorAll(".card-info");
-  console.log(cards);
+  
   cards.forEach(card => {
     card.addEventListener("mouseover", function(e){
       this.children[1].classList.add("transforms");
