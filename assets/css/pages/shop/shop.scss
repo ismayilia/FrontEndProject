@@ -444,11 +444,14 @@ header {
 //SHOPS-PRODUCTS
 
 #shops-main {
+    margin-bottom: 4rem;
     .shops-all {
         margin-top: 4rem;
 
         .shops-left {
             margin-right: 2rem;
+            position: sticky;
+            top: 0;
 
             .product-category {
                 h6 {
@@ -483,16 +486,205 @@ header {
                 }
             }
 
+            .filter-by-color {
+                margin-top: 4rem;
+                .category-all {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 14px;
+
+                    .count {
+                        
+                        font-size: 14px;
+                        color: #9aa5b3;
+                    }
+
+                    .category {
+                        display: flex;
+                        text-align: center;
+
+                        span {
+                            padding: 0px 11px;
+                            border-radius: 50%;
+                            position: relative;
+
+                            &:hover::after {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
+                                background-color: rgba(0, 0, 0, .1);
+                                color: #FFF;
+                                font-weight: normal;
+                                line-height: 1;
+                                opacity: 1;
+                                transition: opacity .2s ease;
+                                font-family: 'klbtheme';
+                                content: '\2713';
+                            }
+
+
+
+                        }
+
+                        label {
+                            
+                            font-size: 14px;
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+
+
+                    }
+                }
+
+            }
+
+            .filter-by-size {
+                margin-top: 30px;
+
+                .category-all {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 14px;
+
+                    .count {
+                        
+                        font-size: 14px;
+                        color: #9aa5b3;
+                    }
+
+                    .category {
+                        display: flex;
+                        text-align: center;
+
+                        input {
+                            accent-color: #ee403d;
+                            cursor: pointer;
+                        }
+
+                        label {
+                            
+                            font-size: 14px;
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+            }
+
+            .product-status {
+                margin-top: 30px;
+
+
+
+
+                .count {
+                
+                    font-size: 14px;
+                    color: #9aa5b3;
+                }
+
+                .category {
+                    display: flex;
+                    text-align: center;
+                    margin-top: 15px;
+
+                    input {
+                        accent-color: #ee403d;
+                        cursor: pointer;
+                    }
+
+                    label {
+                        
+                        font-size: 14px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+
+
+
+
+
+
             .filter-all {
                 margin-top: 3em;
 
                 .filter-price {
+                    margin-top: 2rem;
 
+                    .filter-by-color {
+                        .category-all {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 14px;
+
+                            .count {
+                                font-family: Regular400;
+                                font-size: 14px;
+                                color: #9aa5b3;
+                            }
+
+                            .category {
+                                display: flex;
+                                text-align: center;
+
+                                span {
+                                    padding: 0px 11px;
+                                    border-radius: 50%;
+                                    position: relative;
+
+                                    &:hover::after {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        background-color: rgba(0, 0, 0, .1);
+                                        color: #FFF;
+                                        font-weight: normal;
+                                        line-height: 1;
+                                        opacity: 1;
+                                        transition: opacity .2s ease;
+                                        font-family: 'klbtheme';
+                                        content: '\2713';
+                                    }
+
+
+
+                                }
+
+                                label {
+                                    font-family: Regular400;
+                                    font-size: 14px;
+                                    margin-left: 10px;
+                                    cursor: pointer;
+                                }
+
+
+                            }
+                        }
+
+                    }
 
                     .range-slider {
                         margin: auto;
                         position: relative;
-                        height: 3em;
+                        height: 4em;
                         display: flex;
                         justify-content: space-between;
 

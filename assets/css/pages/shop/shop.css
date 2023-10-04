@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
 }
@@ -309,11 +310,16 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   cursor: pointer;
 }
 
+#shops-main {
+  margin-bottom: 4rem;
+}
 #shops-main .shops-all {
   margin-top: 4rem;
 }
 #shops-main .shops-all .shops-left {
   margin-right: 2rem;
+  position: sticky;
+  top: 0;
 }
 #shops-main .shops-all .shops-left .product-category h6 {
   margin-bottom: 25px;
@@ -337,13 +343,151 @@ header .header-down .icons .basket-icon a .basket-box h5 {
 #shops-main .shops-all .shops-left .product-category label {
   font-size: 16px;
 }
+#shops-main .shops-all .shops-left .filter-by-color {
+  margin-top: 4rem;
+}
+#shops-main .shops-all .shops-left .filter-by-color .category-all {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+#shops-main .shops-all .shops-left .filter-by-color .category-all .count {
+  font-size: 14px;
+  color: #9aa5b3;
+}
+#shops-main .shops-all .shops-left .filter-by-color .category-all .category {
+  display: flex;
+  text-align: center;
+}
+#shops-main .shops-all .shops-left .filter-by-color .category-all .category span {
+  padding: 0px 11px;
+  border-radius: 50%;
+  position: relative;
+}
+#shops-main .shops-all .shops-left .filter-by-color .category-all .category span:hover::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #FFF;
+  font-weight: normal;
+  line-height: 1;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  font-family: "klbtheme";
+  content: "✓";
+}
+#shops-main .shops-all .shops-left .filter-by-color .category-all .category label {
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#shops-main .shops-all .shops-left .filter-by-size {
+  margin-top: 30px;
+}
+#shops-main .shops-all .shops-left .filter-by-size .category-all {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+#shops-main .shops-all .shops-left .filter-by-size .category-all .count {
+  font-size: 14px;
+  color: #9aa5b3;
+}
+#shops-main .shops-all .shops-left .filter-by-size .category-all .category {
+  display: flex;
+  text-align: center;
+}
+#shops-main .shops-all .shops-left .filter-by-size .category-all .category input {
+  accent-color: #ee403d;
+  cursor: pointer;
+}
+#shops-main .shops-all .shops-left .filter-by-size .category-all .category label {
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#shops-main .shops-all .shops-left .product-status {
+  margin-top: 30px;
+}
+#shops-main .shops-all .shops-left .product-status .count {
+  font-size: 14px;
+  color: #9aa5b3;
+}
+#shops-main .shops-all .shops-left .product-status .category {
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+}
+#shops-main .shops-all .shops-left .product-status .category input {
+  accent-color: #ee403d;
+  cursor: pointer;
+}
+#shops-main .shops-all .shops-left .product-status .category label {
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 #shops-main .shops-all .shops-left .filter-all {
   margin-top: 3em;
+}
+#shops-main .shops-all .shops-left .filter-all .filter-price {
+  margin-top: 2rem;
+}
+#shops-main .shops-all .shops-left .filter-all .filter-price .filter-by-color .category-all {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+#shops-main .shops-all .shops-left .filter-all .filter-price .filter-by-color .category-all .count {
+  font-family: Regular400;
+  font-size: 14px;
+  color: #9aa5b3;
+}
+#shops-main .shops-all .shops-left .filter-all .filter-price .filter-by-color .category-all .category {
+  display: flex;
+  text-align: center;
+}
+#shops-main .shops-all .shops-left .filter-all .filter-price .filter-by-color .category-all .category span {
+  padding: 0px 11px;
+  border-radius: 50%;
+  position: relative;
+}
+#shops-main .shops-all .shops-left .filter-all .filter-price .filter-by-color .category-all .category span:hover::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #FFF;
+  font-weight: normal;
+  line-height: 1;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  font-family: "klbtheme";
+  content: "✓";
+}
+#shops-main .shops-all .shops-left .filter-all .filter-price .filter-by-color .category-all .category label {
+  font-family: Regular400;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 #shops-main .shops-all .shops-left .filter-all .filter-price .range-slider {
   margin: auto;
   position: relative;
-  height: 3em;
+  height: 4em;
   display: flex;
   justify-content: space-between;
 }
