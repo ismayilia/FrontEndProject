@@ -97,7 +97,7 @@ header .header-down .icon-logo .side-bar {
   top: 0px;
   left: 0px;
   height: 100vh;
-  z-index: 3;
+  z-index: 11;
   transition: all 1s;
   overflow-y: scroll;
 }
@@ -145,7 +145,7 @@ header .header-down .icon-logo .overlay {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 10;
 }
 header .header-down .icon-logo .transit {
   transform: translate(-400px, 0);
@@ -335,6 +335,52 @@ header .header-down .icons .basket-icon a .basket-box h5 {
 #featured .featured-all p {
   font-size: 17px;
   color: rgba(0, 0, 0, 0.329);
+}
+
+.boxs {
+  position: relative;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: white;
+  bottom: 500px;
+  z-index: 10;
+  bottom: 0px;
+}
+.boxs .image {
+  width: 70%;
+  margin: 20px 40px;
+}
+.boxs .image img {
+  width: 100%;
+}
+.boxs .text-all {
+  width: 90%;
+}
+.boxs .text-all .sale {
+  display: flex;
+  align-items: center;
+}
+.boxs .text-all .sale h4 {
+  margin-left: 20px;
+  color: red;
+}
+.boxs .text-all .bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.boxs .text-all .border {
+  width: 90%;
+}
+.boxs .close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
 }
 
 #card-sliders .card-all .card-info {

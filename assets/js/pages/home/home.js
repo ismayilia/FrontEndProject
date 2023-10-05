@@ -72,6 +72,7 @@ $(function () {
   overlay.addEventListener("click", function () {
     sideBar.classList.add("transit")
     overlay.classList.add("d-none")
+    modals.classList.add("d-none")
   })
 
 
@@ -222,7 +223,35 @@ $(function () {
 
       
     })
-  });    
+  });  
+  
+  let modals = document.querySelector(".boxs")
+  let openModalsIcon = document.querySelectorAll(".card-info .card-icon i:nth-child(2)")
+  console.log(openModalsIcon);
+  let iconCloseModal = document.querySelector(".boxs .close")
+
+  openModalsIcon.forEach(modalsIcon => {
+    modalsIcon.addEventListener("click", function(){
+      modals.classList.remove("d-none");
+      overlay.classList.remove("d-none")
+      let cardImage = this.parentNode.previousElementSibling.children[0].children[0].getAttribute("src")
+      modals.children[0].children[0].children[0].children[0].setAttribute("src",cardImage)
+      let cardName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[2].innerText
+      modals.children[0].children[0].nextElementSibling.children[0].children[0].innerText=cardName
+    })
+
+    
+  });
+
+  iconCloseModal.addEventListener("click", function () {
+    overlay.classList.add("d-none");
+    modals.classList.add("d-none")
+    body.style.backgroundColor = "white";
+    cart.style.backgroundColor = "white";
+})
+
+
+
 });
 
 
