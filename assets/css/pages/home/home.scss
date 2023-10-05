@@ -485,18 +485,18 @@ header {
 //Modals
 
 .boxs {
-    position: relative;
-    width: 70%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 0 auto;
-    padding: 50px 40px;
+    position: fixed;
+    z-index: 1002;
+    left: 140px;
+    top: 40px;
+    width: 80%;
+    height: 90%;
     background-color: white;
-    bottom: 500px;
-    z-index: 10;
-    bottom: 0px;
+    padding: 50px 40px;
 
     .image {
-        width: 100%;
+        margin-left: 60px;
+        width: 66%;
 
 
         img {

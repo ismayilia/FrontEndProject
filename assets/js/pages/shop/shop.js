@@ -73,6 +73,7 @@ $(function () {
         sideBar.classList.add("transit")
         overlay.classList.add("d-none")
         modals.classList.add("d-none")
+        bodyClose.style.overflowY = "auto"
     })
 
     //Search
@@ -216,6 +217,7 @@ $(function () {
           modals.children[0].children[0].children[0].children[0].setAttribute("src",cardImage)
           let cardName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[2].innerText
           modals.children[0].children[0].nextElementSibling.children[0].children[0].innerText=cardName
+          bodyClose.style.overflowY = "hidden"
         })
     
         
@@ -224,7 +226,7 @@ $(function () {
       iconCloseModal.addEventListener("click", function () {
         overlay.classList.add("d-none");
         modals.classList.add("d-none")
-        
+        bodyClose.style.overflowY = "auto"
     })
 
 

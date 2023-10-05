@@ -96,7 +96,7 @@ header .header-down .icon-logo .side-bar {
   top: 0px;
   left: 0px;
   height: 100vh;
-  z-index: 3;
+  z-index: 1002;
   transition: all 1s;
   overflow-y: scroll;
 }
@@ -144,7 +144,7 @@ header .header-down .icon-logo .overlay {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 1001;
 }
 header .header-down .icon-logo .transit {
   transform: translate(-400px, 0);
@@ -306,6 +306,340 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   position: absolute;
   right: 6px;
   top: 3px;
+  cursor: pointer;
+}
+
+#card-detail .boxs-detail {
+  padding: 50px 0px;
+  background-color: white;
+  width: 100%;
+}
+#card-detail .boxs-detail .image {
+  width: 100%;
+}
+#card-detail .boxs-detail .image img {
+  width: 100%;
+}
+#card-detail .boxs-detail .text-all {
+  width: 100%;
+}
+#card-detail .boxs-detail .text-all h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+#card-detail .boxs-detail .text-all .stock {
+  margin-bottom: 10px;
+}
+#card-detail .boxs-detail .text-all .stock span {
+  color: green;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.045);
+  font-size: 14px;
+  font-weight: 600;
+}
+#card-detail .boxs-detail .text-all .card-content {
+  font-size: 12px;
+}
+#card-detail .boxs-detail .text-all .card-content i {
+  color: yellow;
+}
+#card-detail .boxs-detail .text-all .card-content span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+#card-detail .boxs-detail .text-all .card-content h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+#card-detail .boxs-detail .text-all .card-content p {
+  font-size: 0.75rem;
+}
+#card-detail .boxs-detail .text-all .product-size span {
+  color: black;
+  padding: 7px 30px;
+  line-height: 43px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+#card-detail .boxs-detail .text-all .add {
+  margin-top: 20px;
+}
+#card-detail .boxs-detail .text-all .add .icons-add {
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+#card-detail .boxs-detail .text-all .add .icons-add span {
+  margin: 0 15px;
+}
+#card-detail .boxs-detail .text-all .add .icons-add i {
+  font-size: 14px;
+}
+#card-detail .boxs-detail .text-all .add .add-btn {
+  width: 75%;
+  margin-left: 5px;
+}
+#card-detail .boxs-detail .text-all .add .add-btn button {
+  width: 100%;
+  padding: 7px 0;
+  color: white;
+  background-color: black;
+}
+#card-detail .boxs-detail .text-all .guide {
+  margin: 20px 0;
+}
+#card-detail .boxs-detail .text-all .guide .guide-all {
+  margin-right: 30px;
+}
+#card-detail .boxs-detail .text-all .guide .guide-all i {
+  margin-right: 5px;
+}
+#card-detail .boxs-detail .text-all .guide .guide-all span {
+  font-size: 14px;
+}
+#card-detail .boxs-detail .text-all .tags span {
+  color: rgba(0, 0, 0, 0.26);
+}
+#card-detail .boxs-detail .text-all .tags a {
+  color: black;
+  transition: all 0.5s;
+}
+#card-detail .boxs-detail .text-all .tags a:hover {
+  color: red;
+}
+#card-detail .detail-right {
+  padding-top: 50px;
+  width: 100%;
+}
+#card-detail .detail-right .views-card {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#card-detail .detail-right .views-card .img-views {
+  width: 30%;
+}
+#card-detail .detail-right .views-card .img-views img {
+  width: 100%;
+}
+#card-detail .detail-right .views-card .content-views {
+  width: 100%;
+  margin-left: 20px;
+}
+#card-detail .detail-right .views-card .content-views h6 {
+  font-size: 12px;
+}
+#card-detail .detail-right .views-card .content-views span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#card-description .head-description span {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.24);
+  margin-right: 25px;
+}
+#card-description .head-description span:nth-child(1) {
+  color: black;
+}
+
+#shop-down .down .products-down {
+  margin: 2rem 0 6rem;
+}
+#shop-down .down .products-down .card-info {
+  position: relative;
+  overflow: hidden;
+}
+#shop-down .down .products-down .card-info .basket {
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  z-index: 1000;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 7px;
+  display: none;
+  transition: all 0.5s;
+}
+#shop-down .down .products-down .card-info .basket:hover {
+  background-color: red;
+  color: white;
+}
+#shop-down .down .products-down .card-info .card-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  z-index: 1000;
+  transform: translate(58px, 0);
+  transition: all 0.8s;
+}
+#shop-down .down .products-down .card-info .card-icon i {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 7px;
+  transition: all 0.5s;
+}
+#shop-down .down .products-down .card-info .card-icon i:hover {
+  background-color: red;
+  color: white;
+}
+#shop-down .down .products-down .card-info .card-icon a {
+  color: black;
+}
+#shop-down .down .products-down .card-info .transforms {
+  transform: translate(0px, 0px);
+}
+#shop-down .down .products-down .card-info .card-sale {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  z-index: 1000;
+}
+#shop-down .down .products-down .card-info .card-sale span {
+  padding: 3px 12px;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(14, 209, 14);
+}
+#shop-down .down .products-down .card-info .card-content {
+  margin-top: 10px;
+}
+#shop-down .down .products-down .card-info .card-content i {
+  color: yellow;
+  font-size: 12px;
+}
+#shop-down .down .products-down .card-info .card-content span {
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 10px;
+}
+#shop-down .down .products-down .card-info .card-content a {
+  display: block;
+  font-size: 15px;
+  color: black;
+  margin: 10px 0;
+  font-weight: 500;
+}
+#shop-down .down .products-down .card-info .card-content h6 {
+  font-weight: 800px;
+}
+
+.boxs {
+  position: fixed;
+  z-index: 1002;
+  left: 140px;
+  top: 40px;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  padding: 50px 40px;
+}
+.boxs .image {
+  width: 66%;
+  margin-left: 60px;
+}
+.boxs .image img {
+  width: 100%;
+}
+.boxs .text-all {
+  width: 100%;
+}
+.boxs .text-all h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.boxs .text-all .stock {
+  margin-bottom: 10px;
+}
+.boxs .text-all .stock span {
+  color: green;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.045);
+  font-size: 14px;
+  font-weight: 600;
+}
+.boxs .text-all .card-content {
+  font-size: 12px;
+}
+.boxs .text-all .card-content i {
+  color: yellow;
+}
+.boxs .text-all .card-content span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+.boxs .text-all .card-content h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.boxs .text-all .card-content p {
+  font-size: 0.75rem;
+}
+.boxs .text-all .product-size span {
+  color: black;
+  padding: 7px 30px;
+  line-height: 43px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+.boxs .text-all .add {
+  margin-top: 20px;
+}
+.boxs .text-all .add .icons-add {
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+.boxs .text-all .add .icons-add span {
+  margin: 0 15px;
+}
+.boxs .text-all .add .icons-add i {
+  font-size: 14px;
+}
+.boxs .text-all .add .add-btn {
+  width: 75%;
+  margin-left: 5px;
+}
+.boxs .text-all .add .add-btn button {
+  width: 100%;
+  padding: 7px 0;
+  color: white;
+  background-color: black;
+}
+.boxs .text-all .guide {
+  margin: 20px 0;
+}
+.boxs .text-all .guide .guide-all {
+  margin-right: 30px;
+}
+.boxs .text-all .guide .guide-all i {
+  margin-right: 5px;
+}
+.boxs .text-all .guide .guide-all span {
+  font-size: 14px;
+}
+.boxs .text-all .tags span {
+  color: rgba(0, 0, 0, 0.26);
+}
+.boxs .text-all .tags a {
+  color: black;
+  transition: all 0.5s;
+}
+.boxs .text-all .tags a:hover {
+  color: red;
+}
+.boxs .close {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 23px;
+  color: red;
   cursor: pointer;
 }
 

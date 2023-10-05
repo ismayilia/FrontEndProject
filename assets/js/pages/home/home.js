@@ -73,6 +73,7 @@ $(function () {
     sideBar.classList.add("transit")
     overlay.classList.add("d-none")
     modals.classList.add("d-none")
+    bodyClose.style.overflowY = "auto"
   })
 
 
@@ -196,35 +197,35 @@ $(function () {
   //Wishlist-Icon-Change
 
   let wishlistIcons = document.querySelectorAll(".card-icon .fa-heart");
-  
-  wishlistIcons.forEach(wishlistIcon => {
-    wishlistIcon.addEventListener("click", function(){
-      this.parentNode.nextElementSibling.style.display= "block";
 
-      this.parentNode.nextElementSibling.addEventListener("click",function(){
-        this.style.display="none"
+  wishlistIcons.forEach(wishlistIcon => {
+    wishlistIcon.addEventListener("click", function () {
+      this.parentNode.nextElementSibling.style.display = "block";
+
+      this.parentNode.nextElementSibling.addEventListener("click", function () {
+        this.style.display = "none"
       })
     })
   });
 
 
-  
+
   let cards = document.querySelectorAll(".card-info");
-  
+
   cards.forEach(card => {
-    card.addEventListener("mouseover", function(e){
+    card.addEventListener("mouseover", function (e) {
       this.children[1].classList.add("transforms");
 
-      
+
     })
 
-    card.addEventListener("mouseout", function(){
+    card.addEventListener("mouseout", function () {
       this.children[1].classList.remove("transforms");
 
-      
+
     })
-  });  
-  
+  });
+
   //MODALS
 
   let modals = document.querySelector(".boxs")
@@ -233,23 +234,24 @@ $(function () {
   let iconCloseModal = document.querySelector(".boxs .close")
 
   openModalsIcon.forEach(modalsIcon => {
-    modalsIcon.addEventListener("click", function(){
+    modalsIcon.addEventListener("click", function () {
       modals.classList.remove("d-none");
       overlay.classList.remove("d-none")
       let cardImage = this.parentNode.previousElementSibling.children[0].children[0].children[0].getAttribute("src")
-      modals.children[0].children[0].children[0].children[0].setAttribute("src",cardImage)
+      modals.children[0].children[0].children[0].children[0].setAttribute("src", cardImage)
       let cardName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[2].innerText
-      modals.children[0].children[0].nextElementSibling.children[0].children[0].innerText=cardName
+      modals.children[0].children[0].nextElementSibling.children[0].children[0].innerText = cardName
+      bodyClose.style.overflowY = "hidden"
     })
 
-    
+
   });
 
   iconCloseModal.addEventListener("click", function () {
+    bodyClose.style.overflowY = "auto"
     overlay.classList.add("d-none");
     modals.classList.add("d-none")
-    
-})
+  })
 
 
 
