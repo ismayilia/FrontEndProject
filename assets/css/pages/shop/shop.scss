@@ -133,7 +133,7 @@ header {
                 top: 0px;
                 left: 0px;
                 height: 100vh;
-                z-index: 3;
+                z-index: 1005;
                 transition: all 1s;
                 overflow-y: scroll;
 
@@ -194,7 +194,7 @@ header {
                 right: 0;
                 bottom: 0;
                 background-color: rgba(0, 0, 0, 0.5);
-                z-index: 3;
+                z-index: 1002;
 
             }
 
@@ -441,10 +441,170 @@ header {
 //     }
 // }
 
+//Modals
+
+.boxs {
+    position: relative;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    background-color: white;
+    bottom: 500px;
+    z-index: 1003;
+    bottom: 0px;
+
+    .image {
+        width: 100%;
+
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-all {
+        width: 100%;
+
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+        }
+
+        .stock {
+            margin-bottom: 10px;
+
+            span {
+                color: green;
+                padding: 5px 10px;
+                background-color: rgba(0, 0, 0, 0.045);
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        .card-content {
+            font-size: 12px;
+
+
+            i {
+                color: yellow;
+
+            }
+
+            span {
+                margin-left: 10px;
+                font-weight: 700;
+            }
+
+            h6 {
+                font-size: 20px;
+                font-weight: 400;
+                margin: 15px 0;
+            }
+
+            p {
+                font-size: 0.75rem;
+            }
+        }
+
+        .product-size {
+            span {
+                color: black;
+                padding: 7px 30px;
+                line-height: 43px;
+                border: 1px solid rgba(0, 0, 0, 0.259);
+
+            }
+        }
+
+        .add {
+            margin-top: 20px;
+
+            .icons-add {
+                padding: 7px 10px;
+                border: 1px solid rgba(0, 0, 0, 0.259);
+
+                span {
+                    margin: 0 15px;
+                }
+
+                i {
+                    font-size: 14px;
+                }
+            }
+
+            .add-btn {
+                width: 75%;
+                margin-left: 5px;
+
+                button {
+                    width: 100%;
+                    padding: 7px 0;
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+
+        .guide {
+            margin: 20px 0;
+
+            .guide-all {
+                margin-right: 30px;
+
+                i {
+                    margin-right: 5px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+
+
+        }
+
+        .tags {
+
+            span {
+                color: rgba(0, 0, 0, 0.26);
+            }
+
+            a {
+                color: black;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: red;
+
+                }
+            }
+
+        }
+
+
+
+
+    }
+
+    .close {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        font-size: 23px;
+        color: red;
+        cursor: pointer;
+    }
+
+}
+
 //SHOPS-PRODUCTS
 
 #shops-main {
     margin-bottom: 4rem;
+
     .shops-all {
         margin-top: 4rem;
 
@@ -488,13 +648,14 @@ header {
 
             .filter-by-color {
                 margin-top: 4rem;
+
                 .category-all {
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 14px;
 
                     .count {
-                        
+
                         font-size: 14px;
                         color: #9aa5b3;
                     }
@@ -533,7 +694,7 @@ header {
                         }
 
                         label {
-                            
+
                             font-size: 14px;
                             margin-left: 10px;
                             cursor: pointer;
@@ -554,7 +715,7 @@ header {
                     margin-bottom: 14px;
 
                     .count {
-                        
+
                         font-size: 14px;
                         color: #9aa5b3;
                     }
@@ -569,7 +730,7 @@ header {
                         }
 
                         label {
-                            
+
                             font-size: 14px;
                             margin-left: 10px;
                             cursor: pointer;
@@ -586,7 +747,7 @@ header {
 
 
                 .count {
-                
+
                     font-size: 14px;
                     color: #9aa5b3;
                 }
@@ -602,7 +763,7 @@ header {
                     }
 
                     label {
-                        
+
                         font-size: 14px;
                         margin-left: 10px;
                         cursor: pointer;
@@ -1153,6 +1314,7 @@ header {
         }
     }
 }
+
 
 
 

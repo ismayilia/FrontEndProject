@@ -349,36 +349,102 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   bottom: 0px;
 }
 .boxs .image {
-  width: 70%;
-  margin: 20px 40px;
+  width: 100%;
 }
 .boxs .image img {
   width: 100%;
 }
 .boxs .text-all {
-  width: 90%;
+  width: 100%;
 }
-.boxs .text-all .sale {
-  display: flex;
-  align-items: center;
+.boxs .text-all h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
 }
-.boxs .text-all .sale h4 {
-  margin-left: 20px;
+.boxs .text-all .stock {
+  margin-bottom: 10px;
+}
+.boxs .text-all .stock span {
+  color: green;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.045);
+  font-size: 14px;
+  font-weight: 600;
+}
+.boxs .text-all .card-content {
+  font-size: 12px;
+}
+.boxs .text-all .card-content i {
+  color: yellow;
+}
+.boxs .text-all .card-content span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+.boxs .text-all .card-content h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.boxs .text-all .card-content p {
+  font-size: 0.75rem;
+}
+.boxs .text-all .product-size span {
+  color: black;
+  padding: 7px 30px;
+  line-height: 43px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+.boxs .text-all .add {
+  margin-top: 20px;
+}
+.boxs .text-all .add .icons-add {
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+.boxs .text-all .add .icons-add span {
+  margin: 0 15px;
+}
+.boxs .text-all .add .icons-add i {
+  font-size: 14px;
+}
+.boxs .text-all .add .add-btn {
+  width: 75%;
+  margin-left: 5px;
+}
+.boxs .text-all .add .add-btn button {
+  width: 100%;
+  padding: 7px 0;
+  color: white;
+  background-color: black;
+}
+.boxs .text-all .guide {
+  margin: 20px 0;
+}
+.boxs .text-all .guide .guide-all {
+  margin-right: 30px;
+}
+.boxs .text-all .guide .guide-all i {
+  margin-right: 5px;
+}
+.boxs .text-all .guide .guide-all span {
+  font-size: 14px;
+}
+.boxs .text-all .tags span {
+  color: rgba(0, 0, 0, 0.26);
+}
+.boxs .text-all .tags a {
+  color: black;
+  transition: all 0.5s;
+}
+.boxs .text-all .tags a:hover {
   color: red;
-}
-.boxs .text-all .bottom {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-.boxs .text-all .border {
-  width: 90%;
 }
 .boxs .close {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  font-size: 40px;
+  top: 7px;
+  right: 7px;
+  font-size: 23px;
   color: red;
   cursor: pointer;
 }

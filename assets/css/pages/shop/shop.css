@@ -97,7 +97,7 @@ header .header-down .icon-logo .side-bar {
   top: 0px;
   left: 0px;
   height: 100vh;
-  z-index: 3;
+  z-index: 1005;
   transition: all 1s;
   overflow-y: scroll;
 }
@@ -145,7 +145,7 @@ header .header-down .icon-logo .overlay {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 3;
+  z-index: 1002;
 }
 header .header-down .icon-logo .transit {
   transform: translate(-400px, 0);
@@ -307,6 +307,118 @@ header .header-down .icons .basket-icon a .basket-box h5 {
   position: absolute;
   right: 6px;
   top: 3px;
+  cursor: pointer;
+}
+
+.boxs {
+  position: relative;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: white;
+  bottom: 500px;
+  z-index: 1003;
+  bottom: 0px;
+}
+.boxs .image {
+  width: 100%;
+}
+.boxs .image img {
+  width: 100%;
+}
+.boxs .text-all {
+  width: 100%;
+}
+.boxs .text-all h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.boxs .text-all .stock {
+  margin-bottom: 10px;
+}
+.boxs .text-all .stock span {
+  color: green;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.045);
+  font-size: 14px;
+  font-weight: 600;
+}
+.boxs .text-all .card-content {
+  font-size: 12px;
+}
+.boxs .text-all .card-content i {
+  color: yellow;
+}
+.boxs .text-all .card-content span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+.boxs .text-all .card-content h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.boxs .text-all .card-content p {
+  font-size: 0.75rem;
+}
+.boxs .text-all .product-size span {
+  color: black;
+  padding: 7px 30px;
+  line-height: 43px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+.boxs .text-all .add {
+  margin-top: 20px;
+}
+.boxs .text-all .add .icons-add {
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
+}
+.boxs .text-all .add .icons-add span {
+  margin: 0 15px;
+}
+.boxs .text-all .add .icons-add i {
+  font-size: 14px;
+}
+.boxs .text-all .add .add-btn {
+  width: 75%;
+  margin-left: 5px;
+}
+.boxs .text-all .add .add-btn button {
+  width: 100%;
+  padding: 7px 0;
+  color: white;
+  background-color: black;
+}
+.boxs .text-all .guide {
+  margin: 20px 0;
+}
+.boxs .text-all .guide .guide-all {
+  margin-right: 30px;
+}
+.boxs .text-all .guide .guide-all i {
+  margin-right: 5px;
+}
+.boxs .text-all .guide .guide-all span {
+  font-size: 14px;
+}
+.boxs .text-all .tags span {
+  color: rgba(0, 0, 0, 0.26);
+}
+.boxs .text-all .tags a {
+  color: black;
+  transition: all 0.5s;
+}
+.boxs .text-all .tags a:hover {
+  color: red;
+}
+.boxs .close {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 23px;
+  color: red;
   cursor: pointer;
 }
 

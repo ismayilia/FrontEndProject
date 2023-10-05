@@ -72,6 +72,7 @@ $(function () {
     overlay.addEventListener("click", function () {
         sideBar.classList.add("transit")
         overlay.classList.add("d-none")
+        modals.classList.add("d-none")
     })
 
     //Search
@@ -153,34 +154,6 @@ $(function () {
     });
 
 
-
-
-    // $(function() {
-    // 	$( "#slider-range" ).slider({
-    // 	  range: true,
-    // 	  min: 130,
-    // 	  max: 500,
-    // 	  values: [ 130, 250 ],
-    // 	  slide: function( event, ui ) {
-    // 		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-    // 	  }
-    // 	});
-    // 	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-    // 	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    // });
-    // function getVals() {
-    //     // Get slider values
-    //     let parent = this.parentNode;
-    //     let slides = parent.getElementsByTagName("input");
-    //     let slide1 = parseFloat(slides[0].value);
-    //     let slide2 = parseFloat(slides[1].value);
-    //     // Neither slider will clip the other, so make sure we determine which is larger
-    //     if (slide1 > slide2) { let tmp = slide2; slide2 = slide1; slide1 = tmp; }
-
-    //     let displayElement = parent.getElementsByClassName("rangeValues")[0];
-    //     displayElement.innerHTML = "$" + slide1 + " - $" + slide2;
-    // }
-
     
     (function() {
 
@@ -226,6 +199,33 @@ $(function () {
         });
       
       })();
+
+
+      //     MODALS
+
+      let modals = document.querySelector(".boxs")
+      let openModalsIcon = document.querySelectorAll(".card-info .card-icon i:nth-child(2)")
+      console.log(openModalsIcon);
+      let iconCloseModal = document.querySelector(".boxs .close")
+    
+      openModalsIcon.forEach(modalsIcon => {
+        modalsIcon.addEventListener("click", function(){
+          modals.classList.remove("d-none");
+          overlay.classList.remove("d-none")
+          let cardImage = this.parentNode.previousElementSibling.children[0].children[0].children[0].getAttribute("src")
+          modals.children[0].children[0].children[0].children[0].setAttribute("src",cardImage)
+          let cardName = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[2].innerText
+          modals.children[0].children[0].nextElementSibling.children[0].children[0].innerText=cardName
+        })
+    
+        
+      });
+    
+      iconCloseModal.addEventListener("click", function () {
+        overlay.classList.add("d-none");
+        modals.classList.add("d-none")
+        
+    })
 
 
 });
