@@ -230,7 +230,6 @@ $(function () {
 
   let modals = document.querySelector(".boxs")
   let openModalsIcon = document.querySelectorAll(".card-info .card-icon i:nth-child(2)")
-  console.log(openModalsIcon);
   let iconCloseModal = document.querySelector(".boxs .close")
 
   openModalsIcon.forEach(modalsIcon => {
@@ -254,6 +253,30 @@ $(function () {
   })
 
 
+
+
+
+  // let basket = [];
+
+  let cardDetailBtn = document.querySelectorAll(".card-all .card-info .card-img a")
+
+let basket = []
+
+  cardDetailBtn.forEach(detailBtn => {
+    detailBtn.addEventListener("click", function () {
+      let cardName = this.parentNode.parentNode.parentNode.children[4].children[2].innerText
+      let cardImg = this.children[0].getAttribute("src")
+      basket.push({
+        name:cardName,
+        image:cardImg
+      })
+
+  
+      
+      localStorage.setItem("basket", JSON.stringify(basket));
+      
+    })
+  });
 
 });
 
