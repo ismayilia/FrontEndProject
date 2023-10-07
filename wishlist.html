@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="./assets/css/pages/wishlist/wishlist.css">
     <title>Wishlist</title>
 </head>
@@ -267,17 +268,79 @@
 
     </div>
 
-<main>
-    <section id="wishlist">
-        <div class="container">
-            <div class="wishlist-content">
-                <h3>Default wishlist</h3>
-                <h6>Your Wishlist is currently empty.</h6>
-                <a href="shop.html">Return To Shop</a>
+    <main>
+        <section id="empty-cart">
+            <div class="container">
+                <div class="cart-content">
+                    
+                    <h6>Your cart is currently empty.</h6>
+                    <a href="shop.html">Return To Shop</a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section id="cart">
+            <div class="container">
+              <div class="row">
+                <div class="col-9">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="padding-left: 110px">Image</th>
+                        <th style="padding-left: 50px">Name</th>
+                        <th>Count</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+    
+                <div class="col-3">
+                  <div class="all-price">
+                    <p>Cart totals</p>
+                    <hr />
+    
+                    <div class="shipping-container">
+                      <p>Shipping</p>
+                      <ul>
+                        <li>
+                          <label for="">Free shipping</label>
+                          <input type="radio" name="" id="" />
+                        </li>
+                        <li>
+                          <label for="">Local pickup </label>
+                          <input type="radio" name="" id="" />
+                        </li>
+                        <li>
+                          <span>Shipping to <strong>AL.</strong> </span>
+                        </li>
+                        <li style="margin-top: 20px">
+                          <a href="">Change address</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+    
+                    <div class="price-container">
+                      <p class="price">Total:</p>
+                      <strong>
+                        <span style="font-size: 18px" class="total-price"></span>
+                      </strong>
+                    </div>
+    
+                    <button class="checkoutBtn">Proceed to checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
     </section>
-</main>
+
+
+
+    </main>
 
 
 

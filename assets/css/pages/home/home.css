@@ -860,6 +860,20 @@ footer .footer-top .email-info .email-subs button {
   border: none;
   text-align: center;
 }
+footer .btn {
+  display: flex;
+  justify-content: end;
+}
+footer .btn #topbtn {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border: none;
+}
+footer .btn #topbtn i {
+  color: white !important;
+  font-size: 15px;
+}
 footer .footer-middle {
   border-bottom: 1px solid rgba(0, 0, 0, 0.295);
   height: 225px;

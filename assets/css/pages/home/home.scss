@@ -1242,6 +1242,24 @@ footer {
         }
     }
 
+    // to Header
+    .btn {
+        display: flex;
+        justify-content: end;
+
+        #topbtn {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border: none;
+
+            i {
+                color: white !important;
+                font-size: 15px;
+            }
+        }
+    }
+
     .footer-middle {
         border-bottom: 1px solid rgba(0, 0, 0, 0.295);
         height: 225px;

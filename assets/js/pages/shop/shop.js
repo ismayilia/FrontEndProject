@@ -230,4 +230,118 @@ $(function () {
     })
 
 
+    let cardDetailBtn = document.querySelectorAll(" .card-info .card-img a")
+
+let basket = []
+// if (localStorage.getItem("basket") != null) {
+//   basket = JSON.parse(localStorage.getItem("basket"))
+// } else {
+//   document.querySelector(".basket-icon .posution").classList.add("d-none")
+// }
+
+
+
+
+//Card-detail
+  cardDetailBtn.forEach(detailBtn => {
+    detailBtn.addEventListener("click", function () {
+      let cardName = this.parentNode.parentNode.parentNode.children[4].children[2].innerText
+      let cardImg = this.children[0].getAttribute("src")
+      // let existProduct = basket.find(m => m.name == cardName);
+
+   
+    //   if (existProduct != undefined) {
+    //     existProduct.count++;
+    //     basket.push({
+    //       name:cardName,
+    //       image:cardImg,
+    //     })
+    // } else {
+
+    //   basket.push({
+    //     name:cardName,
+    //     image:cardImg,
+    //     count:1
+    //   })
+    // }
+
+    
+   
+    basket.push({
+      name:cardName,
+      image:cardImg,
+      count:1
+    })
+  
+      
+      localStorage.setItem("basket", JSON.stringify(basket));
+      
+    })
+  });
+
+
+  // Add to Basket
+
+
+
+  let addToBasket = []
+
+  let cardDetailIcons = document.querySelectorAll(".card-info .card-icon .fa-bag-shopping")
+  
+
+  if (localStorage.getItem("addToBasket") != null) {
+    addToBasket = JSON.parse(localStorage.getItem("addToBasket"))
+  } else {
+    document.querySelector(".basket-icon .posution").classList.add("d-none")
+  }
+
+  if (addToBasket.length == 0) {
+    document.querySelector(".basket-icon .posution").classList.add("d-none");
+  }
+
+
+  function basketCount() {
+    let basketCount = 0;
+    for (const item of addToBasket) {
+        basketCount += item.count;
+    }
+    return basketCount;
+}
+
+
+document.querySelector(".basket-icon .posution").innerText = basketCount();
+
+  cardDetailIcons.forEach(detailIcon => {
+    detailIcon.addEventListener("click", function (e) {
+      e.preventDefault();
+      let productName = this.parentNode.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[2].innerText
+      let productPrice = parseFloat(this.parentNode.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[3].innerText.substring(1)) 
+      let productImg = this.parentNode.parentNode.previousElementSibling.children[0].children[0].children[0].getAttribute("src")
+      
+
+      let existProduct = addToBasket.find(m => m.name == productName);
+
+        if (existProduct != undefined) {
+            existProduct.count++;
+        } else {
+
+          addToBasket.push({
+            image: productImg,
+            name: productName,
+            price: productPrice,
+            count:1
+    
+          })
+        }
+      
+      
+
+        localStorage.setItem("addToBasket", JSON.stringify(addToBasket));
+    
+        document.querySelector(".basket-icon .posution").innerText = basketCount();
+        document.querySelector(".basket-icon .posution").classList.remove("d-none");
+    })
+  });
+
+
 });

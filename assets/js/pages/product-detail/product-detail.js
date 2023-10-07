@@ -169,15 +169,118 @@ $(function () {
         bodyClose.style.overflowY = "auto"
     })
 
+
+    //Cards-bottom
+
+    let cardDetailBtn = document.querySelectorAll(".card-info .card-img a")
+
+let basket = []
+// if (localStorage.getItem("basket") != null) {
+//   basket = JSON.parse(localStorage.getItem("basket"))
+// } else {
+//   document.querySelector(".basket-icon .posution").classList.add("d-none")
+// }
+
+
+
+
+//Card-detail
+  cardDetailBtn.forEach(detailBtn => {
+    detailBtn.addEventListener("click", function () {
+      let cardName = this.parentNode.parentNode.parentNode.children[4].children[2].innerText
+      let cardImg = this.children[0].getAttribute("src")
+      // let existProduct = basket.find(m => m.name == cardName);
+
+   
+    //   if (existProduct != undefined) {
+    //     existProduct.count++;
+    //     basket.push({
+    //       name:cardName,
+    //       image:cardImg,
+    //     })
+    // } else {
+
+    //   basket.push({
+    //     name:cardName,
+    //     image:cardImg,
+    //     count:1
+    //   })
+    // }
+
+    
+   
+    basket.push({
+      name:cardName,
+      image:cardImg,
+      count:1
+    })
+  
+      
+      localStorage.setItem("basket", JSON.stringify(basket));
+      
+    })
+  });
+
+
+    //set details
     let card = document.querySelector(".boxs-detail");
-    let basket = [];
+    let details = [];
+    // details = JSON.parse(localStorage.getItem("basket"))
 
-    basket = JSON.parse(localStorage.getItem("basket"));
 
-    for (const elem of basket) {
-        card.children[0].children[0].nextElementSibling.children[0].children[0].innerText = elem.name;
-        card.children[0].children[0].children[0].children[0].setAttribute("src", elem.image)
+    if (localStorage.getItem("basket") != null) {
+        details = JSON.parse(localStorage.getItem("basket"))
+        for (const detail of details) {
+       
+        card.children[0].children[0].nextElementSibling.children[0].children[0].innerText = detail.name;
+        card.children[0].children[0].children[0].children[0].setAttribute("src", detail.image)
     }
+      } else {
+        document.querySelector(".basket-icon .posution").classList.add("d-none")
+      }
+
+
+
+   `` 
+
+
+
+// CARD
+
+
+
+
+function basketCount() {
+  let basketCount = 0;
+  for (const item of details) {
+      basketCount += item.count;
+  }
+  return basketCount;
+}
+
+document.querySelector(".basket-icon .posution").innerText=basketCount();
+
+
+if (details.length == 0) {
+  document.querySelector(".basket-icon .posution").classList.add("d-none");
+}
+
+let addToCard = document.querySelector(".text-all .add .add-btn a")
+
+addToCard.addEventListener("click",function(e){
+  e.preventDefault();
+  let name= this.parentNode.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerText
+for (const item of basket) {
+    if(item.name===name){
+        console.log("salam");
+    }
+}
+})
+
+
+
+
+
 
 
 

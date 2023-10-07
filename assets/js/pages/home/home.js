@@ -254,27 +254,101 @@ $(function () {
 
 
 
+  $('#topbtn').click(function () {
+    $('html').animate({
+      scrollTop: 0
+    }, 100)
+
+  })
 
 
-  // let basket = [];
 
+  //Card-detail
+
+  let basket = []
   let cardDetailBtn = document.querySelectorAll(".card-all .card-info .card-img a")
-
-let basket = []
-
   cardDetailBtn.forEach(detailBtn => {
     detailBtn.addEventListener("click", function () {
       let cardName = this.parentNode.parentNode.parentNode.children[4].children[2].innerText
       let cardImg = this.children[0].getAttribute("src")
+
+
+
       basket.push({
-        name:cardName,
-        image:cardImg
+        name: cardName,
+        image: cardImg,
+        count: 1
       })
 
-  
-      
+
       localStorage.setItem("basket", JSON.stringify(basket));
+
+    })
+  });
+
+
+
+
+  // Add to Basket
+
+
+
+  let addToBasket = []
+
+  let cardDetailIcons = document.querySelectorAll(".card-info .card-icon .fa-bag-shopping")
+  
+
+  if (localStorage.getItem("addToBasket") != null) {
+    addToBasket = JSON.parse(localStorage.getItem("addToBasket"))
+  } else {
+    document.querySelector(".basket-icon .posution").classList.add("d-none")
+  }
+
+  if (addToBasket.length == 0) {
+    document.querySelector(".basket-icon .posution").classList.add("d-none");
+  }
+
+
+  function basketCount() {
+    let basketCount = 0;
+    for (const item of addToBasket) {
+        basketCount += item.count;
+    }
+    return basketCount;
+}
+
+
+document.querySelector(".basket-icon .posution").innerText = basketCount();
+
+  cardDetailIcons.forEach(detailIcon => {
+    detailIcon.addEventListener("click", function (e) {
+      e.preventDefault();
+      let productName = this.parentNode.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[2].innerText
+      let productPrice = parseFloat(this.parentNode.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.children[3].innerText.substring(1)) 
+      let productImg = this.parentNode.parentNode.previousElementSibling.children[0].children[0].children[0].getAttribute("src")
       
+
+      let existProduct = addToBasket.find(m => m.name == productName);
+
+        if (existProduct != undefined) {
+            existProduct.count++;
+        } else {
+
+          addToBasket.push({
+            image: productImg,
+            name: productName,
+            price: productPrice,
+            count:1
+    
+          })
+        }
+      
+      
+
+        localStorage.setItem("addToBasket", JSON.stringify(addToBasket));
+    
+        document.querySelector(".basket-icon .posution").innerText = basketCount();
+        document.querySelector(".basket-icon .posution").classList.remove("d-none");
     })
   });
 
