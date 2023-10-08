@@ -157,7 +157,7 @@ function showBasketDatas(products) {
         <i data-id="${item.name}" class="fa-solid fa-plus "></i>
      </td>
         <td>${item.price} $</td>
-        <td>${Math.round(item.price * item.count)} $</td>
+        <td>${parseFloat(item.price * item.count)} $</td>
         <td>
             <button data-id="${
               item.name
@@ -172,7 +172,7 @@ function totalPrice() {
   let total = 0;
 
   for (const item of basket) {
-    total += Math.round(item.price * item.count);
+    total += parseFloat(item.price * item.count);
     document.querySelector("main .total-price").innerHTML = total + " $";
   }
 }
